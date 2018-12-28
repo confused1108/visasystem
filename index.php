@@ -1,4 +1,7 @@
 <?php
+    define("URL","http://127.0.0.1/visasystem/");
+    define("CTRL",URL."index.php/");
+    define("THEME",URL."public/");
 /**
  * CodeIgniter
  *
