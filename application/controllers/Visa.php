@@ -62,7 +62,16 @@ class Visa extends CI_Controller {
         $sheet = $this->VisaModel->form_second($appnum);
         $this->load->view('main/form_second',$sheet);
     }
-
+    public function form_third($appnum){
+        $this->load->Model('VisaModel');
+        $sheet = $this->VisaModel->form_second($appnum);
+        $this->load->view('main/form_third',$sheet);
+    }
+    public function form_fourth($appnum){
+        $this->load->Model('VisaModel');
+        $sheet = $this->VisaModel->form_second($appnum);
+        $this->load->view('main/form_third',$sheet);
+    }
     public function apply_second($appnum){
         $data=array();
         $data['application_num']=$appnum;
@@ -73,7 +82,7 @@ class Visa extends CI_Controller {
         $data['mname']=$_POST['mname'];
         $data['fname']=$_POST['fname'];
         $data['previous_surname']=$_POST['previous_surname'];
-        $data['previous_name']=$_POST['previos_name'];
+        $data['previous_name']=$_POST['previous_name'];
         $data['sex']=$_POST['sex'];
         $data['dob']=$_POST['dob'];
         $data['birth_city']=$_POST['birth_city'];
@@ -90,7 +99,45 @@ class Visa extends CI_Controller {
 
         $this->load->Model('VisaModel');
         $sheet = $this->VisaModel->apply_second($data);
-        redirect(CTRL."Visa/form_second/$appnum");
+        redirect(CTRL."Visa/form_third/$appnum");
+    }
+    public function apply_third($appnum){
+        $data=array();
+        $data['application_num']=$appnum;
+        $data['port_of_arrival']=$_POST['port_of_arrival'];
+        $data['house_no']=$_POST['house_no'];
+        $data['vill_town']=$_POST['vill_town'];
+        $data['state']=$_POST['state'];
+        $data['zip_code']=$_POST['zip_code'];
+        $data['add_country']=$_POST['add_country'];
+        $data['mobile_no']=$_POST['mobile_no'];
+        $data['father_name']=$_POST['father_name'];
+        $data['father_nationality']=$_POST['father_nationality'];
+        $data['father_pnationality']=$_POST['father_pnationality'];
+        $data['father_birthplace']=$_POST['father_birthplace'];
+        $data['father_bcountry']=$_POST['father_bcountry'];
+        $data['mother_name']=$_POST['mother_name'];
+        $data['mother_nationality']=$_POST['mother_nationality'];
+        $data['mother_pnationality']=$_POST['mother_pnationality'];
+        $data['mother_birthplace']=$_POST['mother_birthplace'];
+        $data['mother_bcountry']=$_POST['mother_bcountry'];
+        $data['spouse_name']=$_POST['spouse_name'];
+        $data['spouse_nationality']=$_POST['spouse_nationality'];
+        $data['spouse_pnationality']=$_POST['spouse_pnationality'];
+        $data['spouse_birthplace']=$_POST['spouse_birthplace'];
+        $data['spouse_bcountry']=$_POST['spouse_bcountry'];
+        $data['marital_status']=$_POST['marital_status'];
+        $data['pak_vak']=$_POST['pak_vak'];
+        $data['pak_naltional']=$_POST['pak_naltional'];
+        $data['present_occupation']=$_POST['present_occupation'];
+        $data['employer_name']=$_POST['employer_name'];
+        $data['emp_designation']=$_POST['emp_designation'];
+        $data['employer_add']=$_POST['employer_add'];
+        $data['employer_phone']=$_POST['employer_phone'];
+
+        $this->load->Model('VisaModel');
+        $sheet = $this->VisaModel->apply_second($data);
+        redirect(CTRL."Visa/form_fourth/$appnum");
     }
 }
 
