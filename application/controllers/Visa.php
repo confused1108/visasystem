@@ -68,9 +68,16 @@ class Visa extends CI_Controller {
         $this->load->view('main/form_third',$sheet);
     }
     public function form_fourth($appnum){
+        $this->load->helper('form');
         $this->load->Model('VisaModel');
         $sheet = $this->VisaModel->form_second($appnum);
-        $this->load->view('main/form_third',$sheet);
+        $this->load->view('main/form_fourth',$sheet);
+    }
+    public function form_fifth($appnum){
+        //$this->load->helper('form');
+        $this->load->Model('VisaModel');
+        $sheet = $this->VisaModel->form_second($appnum);
+        $this->load->view('main/form_fifth',$sheet);
     }
     public function apply_second($appnum){
         $data=array();
@@ -138,6 +145,68 @@ class Visa extends CI_Controller {
         $this->load->Model('VisaModel');
         $sheet = $this->VisaModel->apply_second($data);
         redirect(CTRL."Visa/form_fourth/$appnum");
+    }
+    public function apply_fourth($appnum){
+        $data=array();
+        $data['application_num']=$appnum;
+
+        $filename= $_FILES["photo"]["name"];
+        $file_ext = pathinfo($filename,PATHINFO_EXTENSION);
+        $name=$appnum.''.random_string('numeric', 3);
+        $config['upload_path']          = 'uploads/';
+        $config['allowed_types']        = 'jpg|jpeg|png|pdf';
+        $config['max_size']             = 10000;
+        $config['overwrite'] = FALSE;
+        $config['remove_spaces'] = TRUE;
+        $config['file_name'] = $name;
+        $this->load->library('upload', $config);
+        if ( ! $this->upload->do_upload("photo"))
+        {
+            $error = array('error' => $this->upload->display_errors());
+            print_r($error);
+        }else {
+            $data['photo']=$name.'.'.$file_ext;
+
+            $filename= $_FILES["passport"]["name"];
+            $file_ext = pathinfo($filename,PATHINFO_EXTENSION);
+            $name1=$name.'1';
+            $config['upload_path']          = 'uploads/';
+            $config['allowed_types']        = 'jpg|jpeg|png|pdf';
+            $config['max_size']             = 10000;
+            $config['overwrite'] = FALSE;
+            $config['remove_spaces'] = TRUE;
+            $config['file_name'] = $name1;
+            $this->load->library('upload', $config);
+            if ( ! $this->upload->do_upload("passport"))
+            {
+                $error = array('error' => $this->upload->display_errors());
+                print_r($error);
+            }else {
+                $data['passport']=$name1.'.'.$file_ext;
+
+                $filename= $_FILES["medical_doc"]["name"];
+                $file_ext = pathinfo($filename,PATHINFO_EXTENSION);
+                $name2=$name.'2';
+                $config['upload_path']          = 'uploads/';
+                $config['allowed_types']        = 'jpg|jpeg|png|pdf';
+                $config['max_size']             = 10000;
+                $config['overwrite'] = FALSE;
+                $config['remove_spaces'] = TRUE;
+                $config['file_name'] = $name2;
+                $this->load->library('upload', $config);
+                if ( ! $this->upload->do_upload("medical_doc"))
+                {
+                    $error = array('error' => $this->upload->display_errors());
+                    print_r($error);
+                }else {
+                    $data['medical_doc']=$name2.'.'.$file_ext;
+                }
+            }
+        }
+
+        $this->load->Model('VisaModel');
+        $sheet = $this->VisaModel->apply_second($data);
+        redirect(CTRL."Visa/form_fifth/$appnum");
     }
 }
 

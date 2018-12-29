@@ -285,7 +285,7 @@ class Admin extends CI_Controller {
         if(is_uploaded_file($_FILES['how_vid']['tmp_name'])){
             $filename= $_FILES["how_vid"]["name"];
             $file_ext = pathinfo($filename,PATHINFO_EXTENSION);
-            $video_name=$data['name'].'-'.$cat_id.'-'.$data['type'].''.random_string('numeric', 3);;
+            $video_name=$data['name'].'-'.$cat_id.'-'.$data['type'].''.random_string('numeric', 3);
             $config['upload_path']          = 'uploads/';
             $config['allowed_types']        = 'mp4|3gp|avi|mts';
             $config['max_size']             = 100000;
