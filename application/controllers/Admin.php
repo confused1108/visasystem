@@ -57,12 +57,37 @@ class Admin extends CI_Controller {
         $sheet=$this->AdminModel->admin_dash();
         $this->load->view('admin/admin_dash',$sheet);
     }
+    public function app_pending()
+    {
+        $this->load->Model('AdminModel');
+        $sheet=$this->AdminModel->app_pending();
+        $this->load->view('admin/admin_dash',$sheet);
+    }
+    public function app_completed()
+    {
+        $this->load->Model('AdminModel');
+        $sheet=$this->AdminModel->app_completed();
+        $this->load->view('admin/admin_dash',$sheet);
+    }
     public function view_applicant($appnum)
     {
         $this->load->Model('AdminModel');
         $sheet=$this->AdminModel->view_applicant($appnum);
         $this->load->view('admin/view_applicant',$sheet);
     }
+    public function app_update($appnum){
+        $data=array();
+        $data['application_num']=$appnum;
+        $data['status']=$_POST['status'];
+        $data['payment']=$_POST['payment'];
+        $data['government_id']=$_POST['government_id'];
+        $data['comment']=$_POST['comment'];
+
+        $this->load->Model('AdminModel');
+        $sheet = $this->AdminModel->app_update($data);
+        redirect(CTRL."Admin/view_applicant/$appnum");
+    }
+
 
 
 

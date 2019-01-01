@@ -38,13 +38,31 @@ Class AdminModel extends CI_Model
         $result['data']=$query->result_array();
         return $result;
     }
+    public function app_pending(){
+        $sql="SELECT * FROM application WHERE payment='Incomplete' ORDER BY app_id DESC";
+        $query=$this->db->query($sql);
+        $result=array();
+        $result['data']=$query->result_array();
+        return $result;
+    }
+    public function app_completed(){
+        $sql="SELECT * FROM application WHERE payment!='Incomplete' ORDER BY app_id DESC";
+        $query=$this->db->query($sql);
+        $result=array();
+        $result['data']=$query->result_array();
+        return $result;
+    }
     public function view_applicant($appnum){
         $sql="SELECT * FROM application WHERE application_num='$appnum'";
         $query=$this->db->query($sql);
         $result['appdata']=$query->result_array();
         return $result;
     }
-
+    public function app_update($data){
+        $appnum=$data['application_num'];
+        $this->db->where('application_num', $appnum);
+        $this->db->update('application', $data);
+    }
 
 
 

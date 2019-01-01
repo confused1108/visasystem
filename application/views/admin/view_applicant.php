@@ -63,7 +63,6 @@
     <script> var base_url = 'https://www.etaonlineindia.com/';</script>
 </head>
 <body onload="preventBack();" onpageshow="if (event.persisted) preventBack();">
-<form method="post" action="<?=CTRL?>Visa/apply_fifth/<?php echo $this->uri->segment('3'); ?>" autocomplete="off" onsubmit="return validate_basic_details_form(3);">
     <!--onsubmit="return validate_basic_details_form();"-->
     <div class="text_left text_bold" style="font-size: .5em;text-align:center;">
         <h3>Application ID : <?php echo $appdata[0]['application_num']; ?></h3>
@@ -159,14 +158,40 @@
                     <tr><td colspan="2"><br></td></tr>
                     <tr> <td>Medical Doc Pic</td><td><img src="<?php echo URL; echo "uploads/"; echo $appdata[0]['medical_doc']; ?>" width="100px" height="130px"></td> </tr>
                     <tr><td>Created Date</td><td>2018-12-28 14:11:19</td></tr>
+                    <tr>
+                        <th colspan="2">Other Details</th>
+                    </tr>
+                    <tr><td>Application Status</td><td><?php echo $appdata[0]['status']; ?></td></tr>
+                    <tr> <td>Payment Status</td><td><?php echo $appdata[0]['payment']; ?></td> </tr>
+                    <tr><td>Government ID</td><td><?php echo $appdata[0]['government_id']; ?></td></tr>
+                    <tr> <td>Comment</td><td><?php echo $appdata[0]['comment']; ?></td> </tr>
+                    <tr>
+                        <th colspan="2">Edit Details</th>
+                    </tr>
+                    <form method="post" action="<?=CTRL?>Admin/app_update/<?php echo $this->uri->segment('3'); ?>" autocomplete="off" onsubmit="return validate_basic_details_form(3);">
+
+                    <tr><td>Application Status</td><td>
+<select name="status">
+    <option value="<?php echo $appdata[0]['status']; ?>"><?php echo $appdata[0]['status']; ?></option>
+    <option value="complete">Complete</option>
+    <option value="pending">Pending</option>
+</select>                        </td></tr>
+                    <tr> <td>Payment Status</td><td>
+                            <select name="payment">
+                                <option value="<?php echo $appdata[0]['payment']; ?>"><?php echo $appdata[0]['payment']; ?></option>
+                                <option value="Incomplete">Incomplete</option>
+                                <option value="Complete">Complete</option>
+                            </select>                         </td> </tr>
+                    <tr><td>Government ID</td><td><input name="government_id"></td></tr>
+                    <tr> <td>Comment</td><td><input name="comment"></td> </tr>
+
 
                     </tbody></table> </center>
         </div>
 
         <div class="row">
             <div class="col-11 text_center">
-                <button type="button" name="submit" class="btn btn-primary btn-lg" onclick="backurl(&#39;https://www.etaonlineindia.com/welcomevisa/form_for_visa_step2/BOL5320&#39;);">Modify/Edit</button>
-                <button type="submit" name="submit" class="btn btn-primary btn-lg" required="required">Verified and Continue</button>
+                <button type="submit" name="submit" class="btn btn-primary btn-lg" required="required">Save Changes</button>
             </div>
         </div>
     </div>
