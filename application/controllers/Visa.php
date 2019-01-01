@@ -38,7 +38,7 @@ class Visa extends CI_Controller {
     }
     public function apply_first(){
         $data=array();
-        $data['application_num']=$_POST['country_code'].'-'.$_POST['fname'];
+        $data['application_num']=substr($_POST['country_code'], 0, 3).''.random_string('numeric', 5);
         $appnum=$data['application_num'];
         $data['applicationtype']=$_POST['applicationtype'];
         $data['fname']=$_POST['fname'];
@@ -72,6 +72,11 @@ class Visa extends CI_Controller {
         $this->load->Model('VisaModel');
         $sheet = $this->VisaModel->form_second($appnum);
         $this->load->view('main/form_fourth',$sheet);
+    }
+    public function form_sixth($appnum){
+        $this->load->Model('VisaModel');
+        $sheet = $this->VisaModel->form_sixth($appnum);
+        $this->load->view('main/form_sixth',$sheet);
     }
     public function form_fifth($appnum){
         //$this->load->helper('form');
@@ -207,6 +212,9 @@ class Visa extends CI_Controller {
         $this->load->Model('VisaModel');
         $sheet = $this->VisaModel->apply_second($data);
         redirect(CTRL."Visa/form_fifth/$appnum");
+    }
+    public function apply_fifth($appnum){
+        redirect(CTRL."Visa/form_sixth/$appnum");
     }
 }
 

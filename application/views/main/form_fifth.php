@@ -62,7 +62,7 @@
     <script> var base_url = 'https://www.etaonlineindia.com/';</script>
 </head>
 <body onload="preventBack();" onpageshow="if (event.persisted) preventBack();">
-<form method="post" action="https://www.etaonlineindia.com/welcomevisa/visa_data_detail/BOL5320" autocomplete="off" onsubmit="return validate_basic_details_form(3);">
+<form method="post" action="<?=CTRL?>Visa/apply_fifth/<?php echo $this->uri->segment('3'); ?>" autocomplete="off" onsubmit="return validate_basic_details_form(3);">
     <!--onsubmit="return validate_basic_details_form();"-->
     <div class="wrapper">
         <a href="https://www.etaonlineindia.com/">
@@ -74,8 +74,8 @@
     </div>
     <div class="text_left text_bold" style="font-size: .5em;text-align:center;">      <h3 style="color:purple;font-weight: bold;"> The Applicant is requested to verify the particulers field in this application form. The Applicant may face legal action(including refusal to enter India or deportation) in case of provisison wrong information.</h3>
         <h5> Please verify your registration details. If all details are correct please press <span style="color:purple;font-weight: bold;">"Verified and Continue"</span>.<br>For any corrections press <span style="color:purple;font-weight: bold;">"Modify/Edit"  </span> </h5>
-        <h3> Please note down your temprory Application ID : BOL5320</h3>
-        <h4>Application Type - Normal Processing</h4>
+        <h3> Please note down your temprory Application ID : <?php echo $appdata[0]['application_num']; ?></h3>
+        <h4>Application Type - <?php echo $appdata[0]['applicationtype']; ?></h4>
     </div>
     <div class="container">
         <!--<div class="row">
@@ -84,44 +84,89 @@
         <div class="row">
             <center>
                 <table style="width:80%">
-                    <tbody><tr>
+                    <tbody>
+                    <tr>
                         <th colspan="2"> Basic Details</th>
                     </tr>
-                    <tr><td>Application type</td><td>Normal Processing</td></tr><tr> <td>First Name</td><td>Hitesh</td> </tr><tr><td>Middle Name</td><td>444</td></tr><tr> <td>Last Name</td><td>Ahuja</td> </tr><tr><td>Sex</td><td>Female</td></tr><tr> <td>Email id</td><td>abcs@gmail.com</td> </tr><tr><td>Date of birth</td><td>2018-12-12</td></tr><tr> <td>Nationality</td><td>BOL-Bolivia</td> </tr><tr><td>Change name details
-                        </td><td></td></tr><tr> <td>Birth City</td><td>bhopal</td> </tr><tr><td>Birth Country</td><td>India</td></tr><!--<tr> <td>National id</td><td></td> </tr>--><tr><td>Religion</td><td>HINDU</td></tr><tr> <td>Education</td><td>BELOW MATRICULATION</td> </tr><tr><td>Marital status</td><td>Married</td></tr>
-                    <tr><td>Spouse name</td><td>Hitesh</td></tr><tr> <td>Spouse Nationality</td><td>Albania</td> </tr><tr><td>Spouse pre. nationality</td><td>Bahamas</td></tr><tr> <td>Spouse Birth Place</td><td>bhbhb</td> </tr><tr><td>Spouse birth country</td><td>Bahamas</td></tr>
+                    <tr><td>Application type</td><td><?php echo $appdata[0]['applicationtype']; ?></td></tr>
+                    <tr> <td>First Name</td><td><?php echo $appdata[0]['fname']; ?></td> </tr>
+                    <tr><td>Middle Name</td><td><?php echo $appdata[0]['mname']; ?></td></tr>
+                    <tr> <td>Last Name</td><td><?php echo $appdata[0]['lname']; ?></td> </tr>
+                    <tr><td>Sex</td><td><?php echo $appdata[0]['sex']; ?></td></tr>
+                    <tr> <td>Email id</td><td><?php echo $appdata[0]['email_id']; ?></td> </tr>
+                    <tr><td>Date of birth</td><td><?php echo $appdata[0]['dob']; ?></td></tr>
+                    <tr> <td>Nationality</td><td><?php echo $appdata[0]['country_code']; ?></td> </tr>
+                    <tr><td>Change name details</td><td><?php echo $appdata[0]['previous_name']; ?> <?php echo $appdata[0]['previous_surname']; ?></td></tr>
+                    <tr> <td>Birth City</td><td><?php echo $appdata[0]['birth_city']; ?></td> </tr>
+                    <tr><td>Birth Country</td><td><?php echo $appdata[0]['birth_country']; ?></td></tr>
+                    <!--<tr> <td>National id</td><td></td> </tr>-->
+                    <tr><td>Religion</td><td><?php echo $appdata[0]['religion']; ?></td></tr>
+                    <tr> <td>Education</td><td><?php echo $appdata[0]['education']; ?></td> </tr>
+                    <tr><td>Marital status</td><td><?php echo $appdata[0]['marital_status']; ?></td></tr>
+                    <tr><td>Spouse name</td><td><?php echo $appdata[0]['spouse_name']; ?></td></tr>
+                    <tr> <td>Spouse Nationality</td><td><?php echo $appdata[0]['spouse_nationality']; ?></td> </tr>
+                    <tr><td>Spouse pre. nationality</td><td><?php echo $appdata[0]['spouse_pnationality']; ?></td></tr>
+                    <tr> <td>Spouse Birth Place</td><td><?php echo $appdata[0]['spouse_birthplace']; ?></td> </tr>
+                    <tr><td>Spouse birth country</td><td><?php echo $appdata[0]['spouse_bcountry']; ?></td></tr>
                     <tr>
                         <th colspan="2">Address Details</th>
                     </tr>
-                    <tr><td>House no</td><td>Room no. 259, BH-3, ABV-IIITM </td></tr><tr> <td>Village/town</td><td>Gwalior</td> </tr><tr><td>State</td><td>Madhya Pradesh</td></tr><tr> <td>Zip/Postal code</td><td>474015</td> </tr><tr><td>Add. Country</td><td>Anguilla</td></tr><tr> <td>Mobile no</td><td></td> </tr><tr><td>Acquire Nationality</td><td>By Birth</td></tr><tr> <td>Pre Nationality</td><td></td> </tr>
+                    <tr><td>House no</td><td><?php echo $appdata[0]['house_no']; ?></td></tr>
+                    <tr> <td>Village/town</td><td><?php echo $appdata[0]['vill_town']; ?></td> </tr>
+                    <tr><td>State</td><td><?php echo $appdata[0]['state']; ?></td></tr>
+                    <tr> <td>Zip/Postal code</td><td><?php echo $appdata[0]['zip_code']; ?></td> </tr>
+                    <tr><td>Add. Country</td><td><?php echo $appdata[0]['add_country']; ?></td></tr>
+                    <tr> <td>Mobile no</td><td><?php echo $appdata[0]['mobile_no']; ?></td></tr>
+                    <tr><td>Acquire Nationality</td><td><?php echo $appdata[0]['acquire_nationality']; ?></td></tr>
+                    <tr> <td>Pre Nationality</td><td></td> </tr>
                     <tr>
                         <th colspan="2">Family Details</th>
                     </tr>
-                    <tr><td>Father name</td><td>pp</td></tr><tr> <td>Father Nationality</td><td>Angola</td> </tr><tr><td>Father pre. nationality</td><td></td></tr><tr> <td>Father Birth Place</td><td>ljij</td> </tr><tr><td>Father birth country</td><td>Anguilla</td></tr><tr> <td>Mother name</td><td>bubuo</td> </tr>
-                    <tr><td>Mother nationality</td><td>American Samoa</td></tr><tr> <td>Mother Pre. Nationality</td><td></td> </tr><tr><td>Mother birth place</td><td>bubub</td></tr><tr> <td>Mother birth country</td><td>India</td> </tr>
+                    <tr><td>Father name</td><td><?php echo $appdata[0]['father_name']; ?></td></tr>
+                    <tr> <td>Father Nationality</td><td><?php echo $appdata[0]['father_nationality']; ?></td> </tr>
+                    <tr><td>Father pre. nationality</td><td><?php echo $appdata[0]['father_pnationality']; ?></td></tr>
+                    <tr> <td>Father Birth Place</td><td><?php echo $appdata[0]['father_birthplace']; ?></td> </tr>
+                    <tr><td>Father birth country</td><td><?php echo $appdata[0]['father_bcountry']; ?></td></tr>
+                    <tr> <td>Mother name</td><td><?php echo $appdata[0]['mother_name']; ?></td> </tr>
+                    <tr><td>Mother nationality</td><td><?php echo $appdata[0]['mother_nationality']; ?></td></tr>
+                    <tr> <td>Mother Pre. Nationality</td><td><?php echo $appdata[0]['mother_pnationality']; ?></td> </tr>
+                    <tr><td>Mother birth place</td><td><?php echo $appdata[0]['mother_birthplace']; ?></td></tr>
+                    <tr> <td>Mother birth country</td><td><?php echo $appdata[0]['mother_bcountry']; ?></td> </tr>
                     <tr>
                         <th colspan="2">Passport Details</th>
                     </tr>
-                    <tr> <td>Passport type</td><td>Ordinary Passport</td> </tr><tr><td>Passport no</td><td>4444444444</td></tr><tr> <td>Passport Place of Issue</td><td>India</td> </tr><tr><td>Passport Date Issue</td><td>2018-12-05</td></tr><tr> <td>Passport Expiry Date</td><td>2018-12-14</td> </tr>
+                    <tr> <td>Passport type</td><td><?php echo $appdata[0]['passport_type']; ?></td> </tr>
+                    <tr><td>Passport no</td><td><?php echo $appdata[0]['passport_no']; ?></td></tr>
+                    <tr> <td>Passport Place of Issue</td><td><?php echo $appdata[0]['passport_place_of_issue']; ?></td> </tr>
+                    <tr><td>Passport Date Issue</td><td><?php echo $appdata[0]['passport_date_issue']; ?></td></tr>
+                    <tr> <td>Passport Expiry Date</td><td><?php echo $appdata[0]['passport_expiry_date']; ?></td> </tr>
                     <tr>
                         <th colspan="2">Visa Details</th>
-                        <!--</tr><tr><td>Apply Visa</td><td>No</td></tr>-->
-                    </tr><tr><td>Port of Arrival
-                        </td><td>GOA SEAPORT</td></tr><tr> <td>Telephone No</td><td>07894561235</td> </tr><tr><td>Exp Date of Arrival</td><td>2019-01-17</td></tr><tr> <td>Visa Type</td><td>e-Medical Visa</td> </tr><tr><td>Visa Duration</td><td>60</td></tr><tr> <td>No. of Entries</td><td>Double</td> </tr><!--<tr><td>Port of Exist</td><td></td></tr><tr> <td>Place like</td><td></td> </tr>--><tr><td>Pakistan Naltionality</td><td></td></tr>
+                    </tr>
+                    <tr><td>Port of Arrival</td><td><?php echo $appdata[0]['port_of_arrival']; ?></td></tr>
+                    <tr> <td>Telephone No</td><td><?php echo $appdata[0]['telephone_no']; ?></td> </tr>
+                    <tr><td>Exp Date of Arrival</td><td><?php echo $appdata[0]['exp_arrival_date']; ?></td></tr>
+                    <tr> <td>Visa Type</td><td><?php echo $appdata[0]['e_visatype']; ?></td> </tr>
+                    <tr><td>Visa Duration</td><td>60</td></tr>
+                    <tr> <td>No. of Entries</td><td>Double</td> </tr>
+                    <tr><td>Pakistan Naltionality</td><td><?php echo $appdata[0]['pak_naltional']; ?></td></tr>
 
                     <tr>
                         <th colspan="2">Occupation Details</th>
                     </tr>
-                    <tr> <td>Present Occupation</td><td>LAWYER</td> </tr><tr><td>Employer Name</td><td></td></tr><tr> <td>Emp. Desigation</td><td></td> </tr><tr> <td>Employer Address</td><td></td> </tr><tr><td>Employer Phone No.</td><td></td></tr>
+                    <tr> <td>Present Occupation</td><td><?php echo $appdata[0]['present_occupation']; ?></td> </tr>
+                    <tr><td>Employer Name</td><td><?php echo $appdata[0]['employer_name']; ?></td></tr>
+                    <tr> <td>Emp. Desigation</td><td><?php echo $appdata[0]['emp_designation']; ?></td> </tr>
+                    <tr> <td>Employer Address</td><td><?php echo $appdata[0]['employer_add']; ?></td> </tr>
+                    <tr><td>Employer Phone No.</td><td><?php echo $appdata[0]['employer_phone']; ?></td></tr>
                     <tr>
                         <th colspan="2">Documents Details</th>
                     </tr>
-                    <tr> <td>Profile Photo</td><td><img src="<?=THEME?>custom/Apply for Visa5_files/1546065886IMG_20180828_083724.jpg" width="100px" height="130px"></td> </tr>
+                    <tr> <td>Profile Photo</td><td><img src="<?php echo URL; echo "uploads/"; echo $appdata[0]['photo']; ?>" width="100px" height="130px"></td> </tr>
                     <tr><td colspan="2"><br></td></tr>
-                    <tr><td>Passport Photo</td><td><img src="<?=THEME?>custom/Apply for Visa5_files/1546071778IMG_20180828_083807.jpg" width="100px" height="130px"></td></tr>
+                    <tr><td>Passport Photo</td><td><img src="<?php echo URL; echo "uploads/"; echo $appdata[0]['passport']; ?>" width="100px" height="130px"></td></tr>
                     <tr><td colspan="2"><br></td></tr>
-                    <tr><td colspan="2"><br></td></tr>
-                    <tr> <td>Medical Doc Pic</td><td><img src="<?=THEME?>custom/Apply for Visa5_files/1546071784IMG_20180828_083807.jpg" width="100px" height="130px"></td> </tr>
+                    <tr> <td>Medical Doc Pic</td><td><img src="<?php echo URL; echo "uploads/"; echo $appdata[0]['medical_doc']; ?>" width="100px" height="130px"></td> </tr>
                     <tr><td>Created Date</td><td>2018-12-28 14:11:19</td></tr>
 
                     </tbody></table> </center>

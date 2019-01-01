@@ -148,26 +148,26 @@
             <div class="row">
                 <div class="col-31 mandatory">House No./Street</div>
                 <div class="col-32">
-                    <input name="house_no" type="text" id="house_no" value="" maxlength="30" required="required">
+                    <input name="house_no" type="text" id="house_no" value="<?php echo $appdata[0]['house_no']; ?>" maxlength="30" required="required">
                 </div>
                 <div class="col-33">House No./Street</div>
             </div>
             <div class="row">
                 <div class="col-31 mandatory">Village/Town/City</div>
-                <div class="col-32"><input name="vill_town" type="text" id="vill_towm" maxlength="35" value="" required="required">   </div>
+                <div class="col-32"><input name="vill_town" type="text" id="vill_towm" maxlength="35" value="<?php echo $appdata[0]['vill_town']; ?>" required="required">   </div>
                 <div class="col-33">Village/Town/City</div>
             </div>
             <div class="row">
                 <div class="col-31 mandatory">State/Province/State </div>
                 <div class="col-32">
-                    <input name="state" type="text" id="state" maxlength="35" value="" required="required">
+                    <input name="state" type="text" id="state" maxlength="35" value="<?php echo $appdata[0]['state']; ?>" required="required">
                 </div>
                 <div class="col-33">State/Province/State</div>
             </div>
             <div class="row">
                 <div class="col-31 mandatory">Postal/Zip Code</div>
                 <div class="col-32 text_bold">
-                    <input name="zip_code" type="text" id="zip_code" maxlength="35" value="" required="required">
+                    <input name="zip_code" type="text" id="zip_code" maxlength="35" value="<?php echo $appdata[0]['zip_code']; ?>" required="required">
                 </div>
                 <div class="col-33">Postal/Zip Code</div>
             </div>
@@ -175,7 +175,7 @@
                 <div class="col-31 mandatory">Country </div>
                 <div class="col-32">
                     <select name="add_country" id="add_country" required="required">
-                        <option value="">Select..</option>
+                        <option value="<?php echo $appdata[0]['add_country']; ?>"><?php if($appdata[0]['add_country']=="") echo "Select Country"; else echo $appdata[0]['add_country']; ?></option>
 
                         <option value="Afghanistan">Afghanistan</option>
 
@@ -687,7 +687,7 @@
             <div class="row">
                 <div class="col-31">Mobile No</div>
                 <div class="col-32 text_bold">
-                    <input name="moblie_no" type="text" id="mobile_no" maxlength="35" value="">
+                    <input name="moblie_no" type="text" id="mobile_no" maxlength="35" value="<?php echo $appdata[0]['mobile_no']; ?>">
                 </div>
                 <div class="col-33">Mobile No</div>
             </div>
@@ -698,14 +698,14 @@
             <div class="row">
                 <div class="col-31 mandatory">Enter Father Name</div>
                 <div class="col-32">
-                    <input name="father_name" maxlength="100" type="text" id="father_name" value="" required="required">   </div>
+                    <input name="father_name" maxlength="100" type="text" id="father_name" value="<?php echo $appdata[0]['father_name']; ?>" required="required">   </div>
                 <div class="col-33">Enter Father Name </div>
             </div>
             <div class="row">
                 <div class="col-31 mandatory">Nationality </div>
                 <div class="col-32">
                     <select name="father_nationality" required="required">
-                        <option value="">Select..</option>
+                        <option value="<?php echo $appdata[0]['father_nationality']; ?>"><?php if($appdata[0]['father_nationality']=="") echo "Select..."; else echo $appdata[0]['father_nationality']; ?></option>
 
                         <option value="Afghanistan">Afghanistan</option>
 
@@ -1205,7 +1205,7 @@
                 <div class="col-31">Previous Nationality</div>
                 <div class="col-32">
                     <select name="father_pnationality">
-                        <option value="">Select..</option>
+                        <option value="<?php echo $appdata[0]['father_pnationality']; ?>"><?php if($appdata[0]['father_pnationality']=="") echo "Select..."; else echo $appdata[0]['father_pnationality']; ?></option>
 
                         <option value="Afghanistan">Afghanistan</option>
 
@@ -1704,7 +1704,7 @@
             <div class="row">
                 <div class="col-31 mandatory">Place Of Birth</div>
                 <div class="col-32">
-                    <input name="father_birthplace" maxlength="14" type="text" id="father_birthplace" value="" required="required">   </div>
+                    <input name="father_birthplace" maxlength="14" type="text" id="father_birthplace" value="<?php echo $appdata[0]['father_birthplace']; ?>" required="required">   </div>
                 <div class="col-33">Place Of Birth</div>
             </div>
 
@@ -1712,7 +1712,7 @@
                 <div class="col-31">Country of Birth</div>
                 <div class="col-32">
                     <select name="father_bcountry" required="required">
-                        <option value="">Select..</option>
+                        <option value="<?php echo $appdata[0]['father_bcountry']; ?>"><?php if($appdata[0]['father_bcountry']=="") echo "Select..."; else echo $appdata[0]['father_bcountry']; ?></option>
 
                         <option value="Afghanistan">Afghanistan</option>
 
@@ -2212,14 +2212,14 @@
             <div class="row">
                 <div class="col-31 mandatory">Enter Mother Name</div>
                 <div class="col-32">
-                    <input name="mother_name" maxlength="100" type="text" id="mother_name" value="" required="required">   </div>
+                    <input name="mother_name" maxlength="100" type="text" id="mother_name" value="<?php echo $appdata[0]['mother_name']; ?>" required="required">   </div>
                 <div class="col-33">Enter Mother Name </div>
             </div>
             <div class="row">
                 <div class="col-31 mandatory">Nationality </div>
                 <div class="col-32">
                     <select name="mother_nationality" required="required">
-                        <option value="">Select..</option>
+                        <option value="<?php echo $appdata[0]['mother_nationality']; ?>"><?php if($appdata[0]['mother_nationality']=="") echo "Select..."; else echo $appdata[0]['mother_nationality']; ?></option>
 
                         <option value="Afghanistan">Afghanistan</option>
 
@@ -2719,7 +2719,7 @@
                 <div class="col-31">Previous Nationality</div>
                 <div class="col-32">
                     <select name="mother_pnationality">
-                        <option value="">Select..</option>
+                        <option value="<?php echo $appdata[0]['mother_pnationality']; ?>"><?php if($appdata[0]['mother_pnationality']=="") echo "Select..."; else echo $appdata[0]['mother_pnationality']; ?></option>
 
                         <option value="Afghanistan">Afghanistan</option>
 
@@ -3217,7 +3217,7 @@
             <div class="row">
                 <div class="col-31 mandatory">Place Of Birth</div>
                 <div class="col-32">
-                    <input name="mother_birthplace" maxlength="14" type="text" id="mother_birthplace" value="" required="required">   </div>
+                    <input name="mother_birthplace" maxlength="14" type="text" id="mother_birthplace" value="<?php echo $appdata[0]['mother_birthplace']; ?>" required="required">   </div>
                 <div class="col-33">Place Of Birth</div>
             </div>
 
@@ -3225,7 +3225,7 @@
                 <div class="col-31">Country of Birth</div>
                 <div class="col-32">
                     <select name="mother_bcountry" required="required">
-                        <option value="">Select..</option>
+                        <option value="<?php echo $appdata[0]['mother_bcountry']; ?>"><?php if($appdata[0]['mother_bcountry']=="") echo "Select..."; else echo $appdata[0]['mother_bcountry']; ?></option>
 
                         <option value="Afghanistan">Afghanistan</option>
 
@@ -3728,7 +3728,8 @@
                 <div class="col-31 mandatory">Applicant's Marital Status</div>
                 <div class="col-32">
                     <select name="marital_status" id="marital_status" required="">
-                        <option value="Single">Single</option>
+                        <option value="<?php echo $appdata[0]['marital_status']; ?>"><?php if($appdata[0]['marital_status']=="") echo "Select..."; else echo $appdata[0]['marital_status']; ?></option>
+                        <option value="Single" >Single</option>
                         <option value="Married">Married</option>
                     </select>
                 </div>
@@ -3741,31 +3742,31 @@
                         <input type="radio" name="pak_vak" value="1" onclick="check_nationality(1);">
                         Yes </label>
                     <label class="radio-inline">
-                        <input type="radio" name="pak_vak" value="0" onclick="check_nationality(0);">
+                        <input type="radio" name="pak_vak" value="0" checked onclick="check_nationality(0);">
                         No </label> </div>
                 <div class="col-33"></div>
             </div>
             <div class="row" id="pak_naltionality" style="display:none;">
                 <div class="col-31"></div>
                 <div class="col-32">
-                    <input type="text" name="pak_naltional" id="pak_naltional" placeholder="if yes,please give detail." value=""></div>
+                    <input type="text" name="pak_naltional" id="pak_naltional" placeholder="if yes,please give detail." value="<?php echo $appdata[0]['pak_naltional']; ?>"></div>
                 <div class="col-33"></div>
             </div>
-            <div id="spouse_details" style="display:none;">
+            <div id="spouse_details" <?php if($appdata[0]['marital_status']=="Single"){?>style="display:none;"<?php } ?>>
                 <div class="row">
                     <div class="col-11">Spouse's Details</div>
                 </div>
                 <div class="row">
                     <div class="col-31 mandatory">Name</div>
                     <div class="col-32">
-                        <input type="text" name="spouse_name" id="spouse_name" value=""></div>
+                        <input type="text" name="spouse_name" id="spouse_name" value="<?php echo $appdata[0]['spouse_name']; ?>"></div>
                     <div class="col-33"></div>
                 </div>
                 <div class="row">
                     <div class="col-31 mandatory">Nationality</div>
                     <div class="col-32">
                         <select name="spouse_nationality" id="spouse_nationality">
-                            <option value="">Select..</option>
+                            <option value="<?php echo $appdata[0]['spouse_nationality']; ?>"><?php if($appdata[0]['spouse_nationality']=="") echo "Select..."; else echo $appdata[0]['spouse_nationality']; ?></option>
 
                             <option value="Afghanistan">Afghanistan</option>
 
@@ -4264,7 +4265,7 @@
                     <div class="col-31 ">Previous Nationality</div>
                     <div class="col-32">
                         <select name="spouse_pnationality" id="spouse_pnationality">
-                            <option value="">Select..</option>
+                            <option value="<?php echo $appdata[0]['spouse_pnationality']; ?>"><?php if($appdata[0]['spouse_pnationality']=="") echo "Select..."; else echo $appdata[0]['spouse_pnationality']; ?></option>
 
                             <option value="Afghanistan">Afghanistan</option>
 
@@ -4761,14 +4762,14 @@
                 <div class="row">
                     <div class="col-31 mandatory">Place Of Birth</div>
                     <div class="col-32">
-                        <input type="text" name="spouse_birthplace" id="spouse_birthplace" value=""></div>
+                        <input type="text" name="spouse_birthplace" id="spouse_birthplace" value="<?php echo $appdata[0]['spouse_birthplace']; ?>"></div>
                     <div class="col-33">Place Of Birth</div>
                 </div>
                 <div class="row">
                     <div class="col-31 mandatory">Country of Birth</div>
                     <div class="col-32">
                         <select name="spouse_bcountry" id="spouse_bcountry">
-                            <option value="">Select..</option>
+                            <option value="<?php echo $appdata[0]['spouse_bcountry']; ?>"><?php if($appdata[0]['spouse_bcountry']=="") echo "Select..."; else echo $appdata[0]['spouse_bcountry']; ?></option>
 
                             <option value="Afghanistan">Afghanistan</option>
 
@@ -5355,25 +5356,25 @@
             <div class="row">
                 <div class="col-31">Employer/Bussiness Name</div>
                 <div class="col-32">
-                    <input type="text" name="employer_name" id="employer_name" value=""></div>
+                    <input type="text" name="employer_name" id="employer_name" value="<?php echo $appdata[0]['employer_name']; ?>"></div>
                 <div class="col-33"></div>
             </div>
             <div class="row">
                 <div class="col-31">Designation</div>
                 <div class="col-32">
-                    <input type="text" name="emp_designation" id="emp_desigation" value=""></div>
+                    <input type="text" name="emp_designation" id="emp_desigation" value="<?php echo $appdata[0]['emp_designation']; ?>"></div>
                 <div class="col-33"></div>
             </div>
             <div class="row">
                 <div class="col-31">Address</div>
                 <div class="col-32">
-                    <input type="text" name="employer_add" id="employer_add" value=""></div>
+                    <input type="text" name="employer_add" id="employer_add" value="<?php echo $appdata[0]['employer_add']; ?>"></div>
                 <div class="col-33"></div>
             </div>
             <div class="row">
                 <div class="col-31">Phone</div>
                 <div class="col-32">
-                    <input type="text" name="employer_phone" id="employer_phone" value=""></div>
+                    <input type="text" name="employer_phone" id="employer_phone" value="<?php echo $appdata[0]['employer_phone']; ?>"></div>
                 <div class="col-33"></div>
             </div>
             <!--End -->

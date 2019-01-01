@@ -118,7 +118,7 @@
             </div>
             <div class="row">
                 <div class="col-31">Middle Name </div>
-                <div class="col-32"><input name="mname" value="" type="text" maxlength="50" id="mname">   </div>
+                <div class="col-32"><input name="mname" value="<?php echo $appdata[0]['mname']; ?>" type="text" maxlength="50" id="mname">   </div>
                 <div class="col-33" style="color:#A30B18">Middle Name/Family Name </div>
             </div>
             <div class="row">
@@ -132,19 +132,19 @@
             </div>
             <div class="row prev_surname_class">
                 <div class="col-31 mandatory">Previous Surname</div>
-                <div class="col-32"><input name="previous_surname" value="" type="text" maxlength="50" id="previous_surname">   </div>
+                <div class="col-32"><input name="previous_surname" value="<?php echo $appdata[0]['previous_surname']; ?>" type="text" maxlength="50" id="previous_surname">   </div>
                 <div class="col-33">Previous Surname</div>
             </div>
             <div class="row prev_surname_class">
                 <div class="col-31 mandatory">Previous Name</div>
-                <div class="col-32"><input name="previous_name" value="" type="text" maxlength="50" id="previous_name">   </div>
+                <div class="col-32"><input name="previous_name" value="<?php echo $appdata[0]['previous_name']; ?>" type="text" maxlength="50" id="previous_name">   </div>
                 <div class="col-33">Previous given name</div>
             </div>
             <div class="row">
                 <div class="col-31 mandatory">Gender</div>
                 <div class="col-32">
                     <select name="sex" id="sex" required="required">
-                        <option value="">Select gender</option>
+                        <option value="<?php echo $appdata[0]['sex']; ?>"><?php if($appdata[0]['sex']=="") echo "Select Gender"; else echo $appdata[0]['sex']; ?></option>
                         <option value="Male"> Male</option>
                         <option value="Female"> Female</option>
                         <option value="Transgender"> Transgender</option>
@@ -161,7 +161,7 @@
             </div>
             <div class="row">
                 <div class="col-31 mandatory">Town/City of birth</div>
-                <div class="col-32"><input name="birth_city" type="text" id="birth_city" value="" maxlength="50" required="required">   </div>
+                <div class="col-32"><input name="birth_city" type="text" id="birth_city" value="<?php echo $appdata[0]['birth_city']; ?>" maxlength="50" required="required">   </div>
                 <div class="col-33">Province/Town/City of birth</div>
             </div>
 
@@ -169,7 +169,7 @@
                 <div class="col-31 mandatory">Country of birth</div>
                 <div class="col-32">
                     <select name="birth_country" id="birth_country" required="required">
-                        <option value=""> Select Country</option>
+                        <option value="<?php echo $appdata[0]['birth_country']; ?>"><?php if($appdata[0]['birth_country']=="") echo "Select Country"; else echo $appdata[0]['birth_country']; ?></option>
                         <option value="Afghanistan">Afghanistan</option>
                         <option value="Albania">Albania</option>
                         <option value="Algeria">Algeria</option>
@@ -429,7 +429,7 @@
                 <div class="col-32">
 
                     <select name="religion" id="religion" onchange="show_religion_other()" required="required">
-                        <option value="">Select Religion</option>
+                        <option value="<?php echo $appdata[0]['religion']; ?>"><?php if($appdata[0]['religion']=="") echo "Select Religion"; else echo $appdata[0]['religion']; ?></option>
                         <option value="BAHAI"> BAHAI</option>
                         <option value="BUDDHISM"> BUDDHISM</option>
                         <option value="CHRISTIAN"> CHRISTIAN</option>
@@ -456,7 +456,7 @@
                 <div class="col-32">
 
                     <select name="education" id="education">
-                        <option value="">Select Education</option>
+                        <option value="<?php echo $appdata[0]['education']; ?>"><?php if($appdata[0]['education']=="") echo "Select Education"; else echo $appdata[0]['education']; ?></option>
                         <option value="BELOW MATRICULATION"> BELOW MATRICULATION</option>
                         <option value="GRADUATE"> GRADUATE</option>
                         <option value="HIGHER SECONDARY"> HIGHER SECONDARY</option>
@@ -647,7 +647,7 @@
                 <div class="col-31 mandatory">Did you acquire Nationality by birth or by naturalization? </div>
                 <div class="col-32">
                     <select name="acquire_nationality" id="" required="required">
-                        <option value="">Select One</option>
+                        <option value="<?php echo $appdata[0]['acquire_nationality']; ?>"><?php if($appdata[0]['acquire_nationality']=="") echo "Select One"; else echo $appdata[0]['acquire_nationality']; ?></option>
                         <option value="By Birth">By Birth</option>
                         <option value="Naturalization">Naturalization</option>
                     </select>
@@ -676,7 +676,7 @@
             <div class="row">
                 <div class="col-31 mandatory">Place of Issue </div>
                 <div class="col-32">
-                    <input name="passport_place_of_issue" maxlength="20" type="text" id="passport_issue_place" value="" required="required">
+                    <input name="passport_place_of_issue" maxlength="20" type="text" id="passport_issue_place" value="<?php echo $appdata[0]['passport_place_of_issue']; ?>" required="required">
                 </div>
                 <div class="col-33">Place of Issue</div>
             </div>
@@ -684,7 +684,7 @@
                 <div class="col-31 mandatory">Date of Issue </div>
                 <div class="col-32">
                     <div class="form-row show-inputbtns">
-                        <input name="passport_date_issue" type="text" data-date-inline-picker="false" data-date-open-on-focus="true" maxlength="10" id="passport_date_issue" value="" pattern="(0[1-9]|1[0-9]|2[0-9]|3[01])/(0[1-9]|1[012])/[0-9]{4}" required="required" class="hasDatepicker">
+                        <input name="passport_date_issue" type="text" data-date-inline-picker="false" data-date-open-on-focus="true" maxlength="10" id="passport_date_issue" value="<?php echo $appdata[0]['passport_date_issue']; ?>" pattern="(0[1-9]|1[0-9]|2[0-9]|3[01])/(0[1-9]|1[012])/[0-9]{4}" required="required" class="hasDatepicker">
                     </div>
                 </div>
                 <div class="col-33">In DD/MM/YYYY format</div>
@@ -693,7 +693,7 @@
                 <div class="col-31 mandatory">Date of Expiry </div>
                 <div class="col-32">
                     <div class="form-row show-inputbtns">
-                        <input type="text" required="required" value="" name="passport_expiry_date" maxlength="10" id="passport_expiry_date" pattern="(0[1-9]|1[0-9]|2[0-9]|3[01])/(0[1-9]|1[012])/[0-9]{4}" class="hasDatepicker">
+                        <input type="text" required="required" value="<?php echo $appdata[0]['passport_expiry_date']; ?>" name="passport_expiry_date" maxlength="10" id="passport_expiry_date" pattern="(0[1-9]|1[0-9]|2[0-9]|3[01])/(0[1-9]|1[012])/[0-9]{4}" class="hasDatepicker">
                     </div>
                 </div>
                 <div class="col-33">In DD/MM/YYYY format.Minimum Six Months Validity is Required from journey date.</div>

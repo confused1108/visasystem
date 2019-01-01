@@ -31,6 +31,37 @@ Class AdminModel extends CI_Model
         }
         return $result;
     }
+    public function admin_dash(){
+        $sql="SELECT * FROM application ORDER BY app_id DESC";
+        $query=$this->db->query($sql);
+        $result=array();
+        $result['data']=$query->result_array();
+        return $result;
+    }
+    public function view_applicant($appnum){
+        $sql="SELECT * FROM application WHERE application_num='$appnum'";
+        $query=$this->db->query($sql);
+        $result['appdata']=$query->result_array();
+        return $result;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     public function add_new_org($data){
         $query=$this->db->insert('organization',$data);
         if($query){
@@ -478,13 +509,7 @@ Class AdminModel extends CI_Model
         $result['catdata']=$query->result_array();
         return $result;
     }
-    public function admin_cat(){
-        $sql="SELECT * FROM categories WHERE cat_id!='5' ORDER BY cat_id DESC";
-        $query=$this->db->query($sql);
-        $result=array();
-        $result['catdata']=$query->result_array();
-        return $result;
-    }
+
     public function admin_org_view($org_id){
         $sql="SELECT * FROM organization WHERE org_id='$org_id'";
         $query=$this->db->query($sql);

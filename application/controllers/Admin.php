@@ -45,18 +45,27 @@ class Admin extends CI_Controller {
         if($sheet['status']==TRUE){
             $admin_id=$sheet['admin_id'];
             $this->session->set_userdata('admin_id',$admin_id);
-            redirect(CTRL."Admin/admin_cat");
+            redirect(CTRL."Admin/admin_dash");
         }
         else{
             redirect(CTRL."Admin/login_view#error");
         }
     }
-    public function admin_cat()
+    public function admin_dash()
     {
         $this->load->Model('AdminModel');
-        $sheet=$this->AdminModel->admin_cat();
-        $this->load->view('admin/admin_cat',$sheet);
+        $sheet=$this->AdminModel->admin_dash();
+        $this->load->view('admin/admin_dash',$sheet);
     }
+    public function view_applicant($appnum)
+    {
+        $this->load->Model('AdminModel');
+        $sheet=$this->AdminModel->view_applicant($appnum);
+        $this->load->view('admin/view_applicant',$sheet);
+    }
+
+
+
     public function admin_org()
     {
         $this->load->Model('AdminModel');

@@ -96,7 +96,7 @@
                 </div>
                 <div class="col-33" style="color:#A30B18">
                     <div id="passport_display" style="float:left;"><label>Sample Photo<span style="color:red;">*</span></label><br><img class="img-responsive" src="<?=THEME?>custom/Apply for Visa4_files/man1.jpg"></div>
-                    <div id="profile_pic_display" style="margin-left:178px"><img src="#" alt="Your Image" id="blah" width="145px" height="137px"></div>
+                    <div id="profile_pic_display" style="margin-left:178px"><img src="<?php echo URL; echo "uploads/"; echo $appdata[0]['photo']; ?>" alt="Your Image" id="blah" width="145px" height="137px"></div>
                     <script>
                         function readURL(input) {
                             if (input.files && input.files[0]) {

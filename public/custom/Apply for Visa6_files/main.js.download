@@ -1,0 +1,330 @@
+jQuery(function($) {
+
+$('.form-one').on('click', function(){
+		if($("#confirm_email").val != $("#email_id").val){
+			alert('Please enter same email.');
+			return false;
+		}
+		
+		return true;
+	});
+   // captcha reload
+	$("#reload").click(function() {
+
+	$("img#img").remove();
+	var id = Math.random();
+	$('<img id="img" src="'+base_url+'welcomevisa/captchaImage?id'+id+'"/>').appendTo("#imgdiv");
+	id ='';
+	});
+	
+	// spouse details
+	$('#marital_status').on('change', function(){
+		//alert($(this).val());
+		$('#spouse_details').hide();
+		$('#spouse_name').attr('required',false);
+		$('#spouse_nationality').attr('required',false);
+		//$('#spouse_pnationality').attr('required',false);
+		$('#spouse_birthplace').attr('required',false);
+		$('#spouse_bcountry').attr('required',false);
+		$('#spouse_name').val('');$('#spouse_nationality').val('');$('#spouse_pnationality').val('');$('#spouse_bcountry').val('');$('#spouse_birthplace').val('');
+		if( $(this).val() == 'Married'){
+			$('#spouse_details').show();
+			$('#spouse_name').attr('required',true);
+			$('#spouse_nationality').attr('required',true);
+			//$('#spouse_pnationality').attr('required',true);
+			$('#spouse_birthplace').attr('required',true);
+			$('#spouse_bcountry').attr('required',true);
+		}
+	});
+	
+	// accordian
+	$('.accordion-toggle').on('click', function(){
+		$(this).closest('.panel-group').children().each(function(){
+		$(this).find('>.panel-heading').removeClass('active');
+		 });
+
+	 	$(this).closest('.panel-heading').toggleClass('active');
+	});
+
+	
+	// Contact form
+	var form = $('#main-contact-form');
+	form.submit(function(event){
+		event.preventDefault();
+		var form_status = $('<div class="form_status"></div>');
+		$.ajax({
+			url: $(this).attr('action'),
+
+			beforeSend: function(){
+				form.prepend( form_status.html('<p><i class="fa fa-spinner fa-spin"></i> Email is sending...</p>').fadeIn() );
+			}
+		}).done(function(data){
+			form_status.html('<p class="text-success">' + data.message + '</p>').delay(3000).fadeOut();
+		});
+	});
+
+	
+		$('#photo').on('change', function() {
+    var file_data = $('#photo').prop('files')[0]; 
+    var size=$('#photo')[0].files[0].size;
+    var extension=$('#photo').val().replace(/^.*\./, '');
+    if(extension == 'png' || extension == 'jpg' || extension == 'jpeg' || extension == 'pdf'){
+        
+        
+    }else{
+        
+        alert('Supported file extensions are "jpg, jpeg, png, pdf"');
+        return false;
+    }
+   // alert(size +'>>>>'+extension);
+    var form_data = new FormData();                  
+    form_data.append('file', file_data);
+    //alert(form_data); 
+    $('#profile_pic_display').html('Please Wait...');
+    $('.btn-lg').attr('disabled',true);
+    $.ajax({
+                url: base_url+'welcomevisa/upload_image', // point to server-side PHP script 
+                dataType: 'json',  // what to expect back from the PHP script, if anything
+                cache: false,
+                contentType: false,
+                processData: false,
+                data: form_data,                         
+                type: 'post',
+                success: function(response){
+                    if(response.status == 1){
+                    alert('Uploaded Successfully.'); // display response from the PHP script, if any
+                    $('.btn-lg').attr('disabled',false);
+					$('#profile_pic_display').html('<img src="'+base_url+'webroot/uploads/'+response.msg+' "width="145px" height="137px" >');	
+					$('#profile_pic').val(response.msg);
+                    }else{
+                        
+                      alert(response.msg);  
+                    }
+                }
+     });
+});
+
+
+$('#passport').on('change', function() {
+    var file_data = $('#passport').prop('files')[0];
+     var size=$('#passport')[0].files[0].size;
+    var extension=$('#passport').val().replace(/^.*\./, '');
+    if(extension == 'png' || extension == 'jpg' || extension == 'jpeg' || extension == 'pdf'){
+        
+        
+    }else{
+        
+        alert('Supported file extensions are "jpg, jpeg, png, pdf"');
+        return false;
+    }
+    
+    var form_data = new FormData();                  
+    form_data.append('file', file_data);
+      $('#passport_img_display').html('Please Wait...');	               
+      $('.btn-lg').attr('disabled',true);
+    $.ajax({
+                url: base_url+'welcomevisa/upload_image', // point to server-side PHP script 
+                dataType: 'json',  // what to expect back from the PHP script, if anything
+                cache: false,
+                contentType: false,
+                processData: false,
+                data: form_data,                         
+                type: 'post',
+                success: function(response){
+                    if(response.status == 1){
+                    alert('Uploaded Successfully.'); // display response from the PHP script, if any
+                    $('.btn-lg').attr('disabled',false);
+					$('#passport_img_display').html('<img src="'+base_url+'webroot/uploads/'+response.msg+'" width="145px" height="137px" >');	
+					$('#passport_img').val(response.msg);
+                    }else{
+                        
+                      alert(response.msg);  
+                    }
+                }
+     });
+});
+
+$('#bussinesscard_pic').on('change', function() {
+    var file_data = $('#bussinesscard_pic').prop('files')[0]; 
+     var size=$('#bussinesscard_pic')[0].files[0].size;
+    var extension=$('#bussinesscard_pic').val().replace(/^.*\./, '');
+    if(extension == 'png' || extension == 'jpg' || extension == 'jpeg' || extension == 'pdf'){
+        
+        
+    }else{
+        
+        alert('Supported file extensions are "jpg, jpeg, png, pdf"');
+        return false;
+    }
+    var form_data = new FormData();                  
+    form_data.append('file', file_data);
+      $('#bussinesscard_pic_display').html('Please Wait...');	               
+      $('.btn-lg').attr('disabled',true);
+    $.ajax({
+                url: base_url+'welcomevisa/upload_image', // point to server-side PHP script 
+                dataType: 'json',  // what to expect back from the PHP script, if anything
+                cache: false,
+                contentType: false,
+                processData: false,
+                data: form_data,                         
+                type: 'post',
+                success: function(response){
+                     if(response.status == 1){
+                    alert('Uploaded Successfully.'); // display response from the PHP script, if any
+                    $('.btn-lg').attr('disabled',false);
+					$('#bussinesscard_pic_display').html('<img src="'+base_url+'webroot/uploads/'+response.msg+'" width="145px" height="137px" >');	
+					$('#bussiness_cardpic').val(response.msg);
+                     }else{
+                        
+                      alert(response.msg);  
+                    }
+                }
+     });
+});
+
+$('#medical_doc_pic').on('change', function() {
+    var file_data = $('#medical_doc_pic').prop('files')[0];   
+    var form_data = new FormData();                  
+    form_data.append('file', file_data);
+      $('#medical_docpic_display').html('Please Wait...');	                   
+      $('.btn-lg').attr('disabled',true);
+    $.ajax({
+                url: base_url+'welcomevisa/upload_image', // point to server-side PHP script 
+                dataType: 'json',  // what to expect back from the PHP script, if anything
+                cache: false,
+                contentType: false,
+                processData: false,
+                data: form_data,                         
+                type: 'post',
+                success: function(response){
+                    if(response.status == 1){
+                    alert('Uploaded Successfully.'); // display response from the PHP script, if any
+                    $('.btn-lg').attr('disabled',false);
+					$('#medical_docpic_display').html('<img src="'+base_url+'webroot/uploads/'+response.msg+'" width="145px" height="137px" >');	
+					$('#medical_docpic').val(response.msg);
+                    }else{
+                        
+                      alert(response.msg);  
+                    }
+                }
+     });
+});
+
+// Appy Now for coupan code
+$('#apply_now').on('click', function() {
+    var coupan_code = $('#coupan_code').val();  
+    var evisa_amount = $('#evisa_amount').val();	
+    var form_data = "coupan_code="+coupan_code+"&evisa_amount="+evisa_amount;                  
+    if(coupan_code ==''){
+		alert('Please Enter Coupan Code.');
+		return false;
+	}
+      //$('#medical_docpic_display').html('Please Wait...');	                   
+      $('#apply_now').attr('disabled',true);
+    $.ajax({
+                url: base_url+'welcomevisa/check_coupan', // point to server-side PHP script 
+                dataType: 'json',  // what to expect back from the PHP script, if anything                
+                data: form_data,                         
+                type: 'post',
+                success: function(response){
+                    if(response.status == 1){
+                    alert('Coupan Code Applied Successfully.'); // display response from the PHP script, if any
+                    $('#apply_now').attr('disabled',false);
+					var amount = $('#amount').val(response.amount);
+			    	$('#total_amount').html(response.amount);
+                    }else{
+                        
+                      alert(response.msg);  
+                    }
+                }
+     });
+});
+
+/*Application Type */
+$('#applicationtype').on('change', function() {	
+	var apptype = $('#applicationtype').val();
+	if( apptype == 'Urgent Processing'){
+		$('#urgent_exp_arruval_date').show();
+		$('#urgent_exp_arruval_date').attr('disabled',false);
+		$('#exp_arruval_date').hide();
+		$('#exp_arruval_date').attr('disabled',true);
+	}else{
+		$('#urgent_exp_arruval_date').hide();
+		$('#urgent_exp_arruval_date').attr('disabled',true);
+		$('#exp_arruval_date').show();
+		$('#exp_arruval_date').attr('disabled',false);
+	}
+});
+
+/* Paymnet gateway */
+$("input:radio[name='payment_options']").click(function(){
+    
+    if($('input:radio[name=payment_options]:checked').val() == "ebs"){
+       $("#evisa_amount").val($("#ebs_evisa_amount").val());
+	   $("#amount").val($("#ebs_evisa_amount").val());
+	   $("#currency").val('INR');
+    }else if($('input:radio[name=payment_options]:checked').val() == "paypal"){
+       $("#evisa_amount").val($("#paypal_evisa_amount").val());
+	   $("#amount").val($("#paypal_evisa_amount").val());
+	   $("#currency").val('USD');
+    }
+});
+
+
+});
+
+
+            $(function () {
+                $('#exp_arruval_date').datepicker({
+					  changeMonth: true,
+					  changeYear: true,
+					  minDate: +5,
+					  dateFormat: 'dd/mm/yy'
+					} );
+					
+					 $('#urgent_exp_arruval_date').datepicker({
+					  changeMonth: true,
+					  changeYear: true,
+					  minDate: +1,
+					  dateFormat: 'dd/mm/yy'
+					} );
+				       
+				$('#dob').datepicker({
+					  changeMonth: true,
+					  changeYear: true,
+					  yearRange: "-100:+0",
+					  maxDate: -0,
+					  dateFormat: 'dd/mm/yy'
+					});
+				$('#passport_date_issue').datepicker({
+					  changeMonth: true,
+					  changeYear: true,
+					   yearRange: "-40:+40",
+					   dateFormat: 'dd/mm/yy'
+					   
+					});
+				$('#passport_expiry_date').datepicker({
+					  changeMonth: true,
+					  changeYear: true,
+					   yearRange: "-40:+40",
+					   dateFormat: 'dd/mm/yy'
+					  
+					});
+            });
+        function check_nationality(val){
+			
+			if(val == 1){
+				$("#pak_naltionality").show();
+				$("#pak_naltional").attr('required',true);
+			}else{
+				$("#pak_naltional").attr('required',false);
+				$("#pak_naltionality").hide();
+				$("#pak_naltional").val('');
+			}
+			
+		}
+		
+		function backurl(url){
+			
+			location.href=url;
+		}
