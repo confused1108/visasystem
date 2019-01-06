@@ -90,28 +90,30 @@
         </div>
         <div style="clear:both;"></div>
         <div class="bg">
-            <div id="nav">
-                <ul>
-                    <li><a href="https://www.etaonlineindia.com/">Home</a></li>
-                    <li><a href="https://www.etaonlineindia.com/apply-visa" class="active">Apply Now</a></li>
-                    <li>
-                        <a href="https://www.etaonlineindia.com/document-requirement">Document Requirement</a>
-                    </li>
-                    <li>
-                        <a href="https://www.etaonlineindia.com/privacy-policy">Privacy Policy</a>
-                    </li>
-                    <li>
-                        <a href="https://www.etaonlineindia.com/terms-conditions">Terms Conditions</a>
-                    </li>
-                    <li>
-                        <a href="https://www.etaonlineindia.com/about-us">About Us</a>
-                    </li>
-                    <li>
-                        <a href="https://www.etaonlineindia.com/contact-us">Contact Us</a>
-                    </li>
+            <ul>
+                <li><a href="<?=CTRL?>">Home</a></li>
+                <li><a href="<?=CTRL?>Visa/apply_visa" class="active">Apply Now</a></li>
+                <!--<li><a href="holiday.php">Holiday</a></li>
+                <li><a href="index.php">Flight</a></li>
+                <li><a href="flight/hotel.php">Hotel</a></li>-->
 
-                </ul>
-            </div>
+                <li>
+                    <a href="<?=CTRL?>Visa/documents">Document Requirement</a>
+                </li>
+                <li>
+                    <a href="<?=CTRL?>Visa/privacy">Privacy Policy</a>
+                </li>
+                <li>
+                    <a href="<?=CTRL?>Visa/terms">Terms Conditions</a>
+                </li>
+                <li>
+                    <a href="<?=CTRL?>Visa/about">About Us</a>
+                </li>
+                <li>
+                    <a href="<?=CTRL?>Visa/contact">Contact Us</a>
+                </li>
+
+            </ul>
         </div>
     </header>
     <!-- Header End--><!--Begin banner-->

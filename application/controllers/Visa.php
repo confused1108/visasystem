@@ -48,6 +48,9 @@ class Visa extends CI_Controller {
     public function terms(){
         $this->load->view('main/terms');
     }
+    public function contact(){
+        $this->load->view('main/contact');
+    }
 
     public function apply_first(){
         $data=array();
