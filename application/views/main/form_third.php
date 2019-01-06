@@ -5381,8 +5381,8 @@
 
             <div class="row">
                 <div class="col-11 text_center">
-                    <input name="submit" type="submit" class="btn btn-primary" id="continue" value="Save and Continue">
-                    <input name="submit_tmp" type="submit" class="btn btn-primary" id="exit" formnovalidate="" value="Save and Temporarily Exit" title="Save and Register Later">
+                    <input name="submit" type="submit" class="btn btn-primary" id="continue" value="Continue">
+                    <input name="submit" type="submit" class="btn btn-primary" id="exit" formnovalidate="" value="Save and Temporarily Exit" title="Save and Register Later">
                 </div>
             </div>
         </div>

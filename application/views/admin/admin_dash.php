@@ -137,6 +137,8 @@
                                         <th>Type</th>
                                         <th>Name</th>
                                         <th>Email</th>
+                                        <th>Passport No.</th>
+                                        <th>Date</th>
                                         <th>Status</th>
                                         <th>Actions</th>
                                        <!-- <th>View</th>-->
@@ -151,10 +153,17 @@
                                             <td><?php echo $val['applicationtype']; ?></td>
                                             <td><?php echo $val['fname']; ?> <?php echo $val['lname']; ?></td>
                                             <td><?php echo $val['email_id']; ?></td>
+                                            <td><?php echo $val['passport_no']; ?></td>
+                                            <td><?php echo $val['updated_date']; ?></td>
                                             <td><?php echo $val['status']; ?></td>
                                             <td>
-                                                &nbsp;&nbsp;<a target="_blank" href="<?= CTRL ?>Admin/view_applicant/<?php echo $val['application_num']; ?>"><i class="fa fa-eye" style="color:#607d8b;"></i></a>
-
+                                                &nbsp;&nbsp;
+                                                <i onclick="myFunction_<?php echo $val['app_id']; ?>()" class="fa fa-eye" style="color:#607d8b; cursor: pointer;"></i>
+                                                <script>
+                                                    function myFunction_<?php echo $val['app_id']; ?>() {
+                                                        var myWindow = window.open("<?= CTRL ?>Admin/view_applicant/<?php echo $val['application_num']; ?>", "", "width=800,height=600");
+                                                    }
+                                                </script>
                                             </td>
 
                                         </tr>

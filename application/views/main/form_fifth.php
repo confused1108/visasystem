@@ -174,7 +174,7 @@
 
         <div class="row">
             <div class="col-11 text_center">
-                <button type="button" name="submit" class="btn btn-primary btn-lg" onclick="backurl(&#39;https://www.etaonlineindia.com/welcomevisa/form_for_visa_step2/BOL5320&#39;);">Modify/Edit</button>
+                <a href="<?=CTRL?>Visa/form_second/<?php echo $this->uri->segment('3'); ?>"><button type="button" name="submit" class="btn btn-primary btn-lg" >Modify/Edit</button></a>
                 <button type="submit" name="submit" class="btn btn-primary btn-lg" required="required">Verified and Continue</button>
             </div>
         </div>

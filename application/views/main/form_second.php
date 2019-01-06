@@ -657,7 +657,7 @@
 
             <div class="row">
                 <div class="col-312">Have you lived for at least two years in the country where you are applying visa?
-                    <input type="radio" id="refer_flag1" style="width:auto;border: none" value="1" name="apply_visa">Yes
+                    <input type="radio" id="refer_flag1" style="width:auto;border: none" value="1" name="apply_visa" checked>Yes
                     <input type="radio" id="refer_flag2" style="width:auto;border: none" value="0" name="apply_visa">No
                 </div>
                 <div class="col-33"></div>
@@ -684,7 +684,7 @@
                 <div class="col-31 mandatory">Date of Issue </div>
                 <div class="col-32">
                     <div class="form-row show-inputbtns">
-                        <input name="passport_date_issue" type="text" data-date-inline-picker="false" data-date-open-on-focus="true" maxlength="10" id="passport_date_issue" value="<?php echo $appdata[0]['passport_date_issue']; ?>" pattern="(0[1-9]|1[0-9]|2[0-9]|3[01])/(0[1-9]|1[012])/[0-9]{4}" required="required" class="hasDatepicker">
+                        <input name="passport_date_issue" type="date"  data-date-inline-picker="false" data-date-open-on-focus="true" maxlength="10" id="passport_date_issue" value="<?php echo $appdata[0]['passport_date_issue']; ?>" pattern="(0[1-9]|1[0-9]|2[0-9]|3[01])/(0[1-9]|1[012])/[0-9]{4}" required="required" class="hasDatepicker">
                     </div>
                 </div>
                 <div class="col-33">In DD/MM/YYYY format</div>
@@ -693,22 +693,21 @@
                 <div class="col-31 mandatory">Date of Expiry </div>
                 <div class="col-32">
                     <div class="form-row show-inputbtns">
-                        <input type="text" required="required" value="<?php echo $appdata[0]['passport_expiry_date']; ?>" name="passport_expiry_date" maxlength="10" id="passport_expiry_date" pattern="(0[1-9]|1[0-9]|2[0-9]|3[01])/(0[1-9]|1[012])/[0-9]{4}" class="hasDatepicker">
+                        <input type="date" required="required" value="<?php echo $appdata[0]['passport_expiry_date']; ?>" name="passport_expiry_date" maxlength="10" id="passport_expiry_date" pattern="(0[1-9]|1[0-9]|2[0-9]|3[01])/(0[1-9]|1[012])/[0-9]{4}" class="hasDatepicker">
                     </div>
                 </div>
                 <div class="col-33">In DD/MM/YYYY format.Minimum Six Months Validity is Required from journey date.</div>
             </div>
             <div class="row">
                 <div class="col-11 text_center">
-                    <input name="submit" type="submit" class="btn btn-primary" id="continue" value="Save and Continue">
-                    <input name="submit_btn" type="submit" class="btn btn-primary" id="exit" formnovalidate="" value="Save and Temporarily Exit" title="Save and Register Later">
+                    <input name="submit" type="submit" class="btn btn-primary" id="continue" value="Continue">
+                    <input name="submit" type="submit" class="btn btn-primary" id="exit" formnovalidate="" value="Save and Temporarily Exit" title="Save and Register Later">
                 </div>
             </div>
         </div>
     </div><!-- end of wrapper -->
     <!--<input type="hidden" name="token" value="ce38d008-c647-4319-bc49-b8e6bc880a36">-->
 
-</form>
 
 <script src="<?=THEME?>custom/Apply for Visa2_files/jquery.min.js.download"></script>
 <script src="<?=THEME?>custom/Apply for Visa2_files/jquery-ui.js.download"></script>

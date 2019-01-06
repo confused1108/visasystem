@@ -37,28 +37,7 @@
         }
     </style>
     <!--Start of Tawk.to Script-->
-    <script type="text/javascript" async="" src="<?=THEME?>custom/Apply for Visa4_files/analytics.js.download"></script><script async="" src="<?=THEME?>custom/Apply for Visa4_files/default" charset="UTF-8" crossorigin="*"></script><script type="text/javascript">
-        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-        (function(){
-            var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-            s1.async=true;
-            s1.src='https://embed.tawk.to/5aa425904b401e45400d9a38/default';
-            s1.charset='UTF-8';
-            s1.setAttribute('crossorigin','*');
-            s0.parentNode.insertBefore(s1,s0);
-        })();
-    </script>
-    <!--End of Tawk.to Script-->
-    <!--Google Analytices Script-->
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async="" src="<?=THEME?>custom/Apply for Visa4_files/js"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
 
-        gtag('config', 'UA-110581702-2');
-    </script>
 
     <!--End-->
 
@@ -91,7 +70,7 @@
             <div class="row">
                 <div class="col-31">Photo</div>
                 <div class="col-32">
-                    <input type="file" name="photo" onchange="readURL(this);" />
+                    <input type="file" name="photo" onchange="readURL(this);" <?php if($appdata[0]['photo']=="") echo "required"; ?> />
 <!--                    <input type="hidden" name="profile_pic" required="required" id="profile_pic" value="1546065886IMG_20180828_083724.jpg">-->
                 </div>
                 <div class="col-33" style="color:#A30B18">
@@ -121,7 +100,7 @@
             <div class="row">
                 <div class="col-31">Upload a scanned copy of your original coloured Passport or take a picture of passport and upload</div>
                 <div class="col-32">
-                    <input type="file" name="passport">
+                    <input type="file" name="passport" <?php if($appdata[0]['passport']=="") echo "required"; ?> >
                 </div>
             </div>
             <div class="row">
@@ -130,7 +109,7 @@
             <div class="row">
                 <div class="col-31">Upload a scanned copy of Medical Document</div>
                 <div class="col-32">
-                    <input type="file" name="medical_doc">
+                    <input type="file" name="medical_doc" <?php if($appdata[0]['medical_doc']=="") echo "required"; ?>>
                 </div>
             </div>
         </div>
@@ -139,8 +118,8 @@
 
     <div class="row">
         <div class="col-11 text_center">
-            <input name="submit" type="submit" class="btn btn-primary" id="continue" value="Save and Continue">
-            <input name="submit_btn" type="submit" class="btn btn-primary" id="exit" formnovalidate="" value="Save and Temporarily Exit" title="Save and Register Later">
+            <input name="submit" type="submit" class="btn btn-primary" id="continue" value="Continue">
+            <input name="submit" type="submit" class="btn btn-primary" id="exit" formnovalidate="" value="Save and Temporarily Exit" title="Save and Register Later">
         </div>
     </div>
 
@@ -149,8 +128,6 @@
 
 </form>
 
-<script src="<?=THEME?>custom/Apply for Visa4_files/jquery.min.js.download"></script>
-<script src="<?=THEME?>custom/Apply for Visa4_files/jquery-ui.js.download"></script>
 <script src="<?=THEME?>custom/Apply for Visa4_files/bootstrap.min.js.download"></script>
 <script src="<?=THEME?>custom/Apply for Visa4_files/main.js.download"></script>
 <script src="<?=THEME?>custom/Apply for Visa4_files/form.js.download"></script>
@@ -161,4 +138,5 @@
         });
     });
 </script>
-<div id="c99ipcJ-1546065820561" class="" style="display: block !important;"><iframe id="Ig2nK9p-1546065820562" src="<?=THEME?>custom/Apply for Visa4_files/saved_resource.html" frameborder="0" scrolling="no" title="chat widget" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; top: auto !important; right: auto !important; bottom: auto !important; left: auto !important; position: static !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 350px !important; height: 520px !important; z-index: 999999 !important; cursor: auto !important; float: none !important; border-radius: unset !important; display: none !important;"></iframe><iframe id="Pli2f5r-1546065820563" src="<?=THEME?>custom/Apply for Visa4_files/saved_resource(1).html" frameborder="0" scrolling="no" title="chat widget" class="" style="outline: none !important; visibility: visible !important; resize: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; position: fixed !important; border: 0px !important; padding: 0px !important; transition-property: none !important; z-index: 1000001 !important; cursor: auto !important; float: none !important; box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 10px 0px !important; height: 60px !important; min-height: 60px !important; max-height: 60px !important; width: 60px !important; min-width: 60px !important; max-width: 60px !important; border-radius: 50% !important; transform: rotate(0deg) translateZ(0px) !important; transform-origin: 0px center 0px !important; margin: 0px !important; top: auto !important; bottom: 20px !important; right: 20px !important; left: auto !important; display: block !important;"></iframe><iframe id="wiPRyLM-1546065820563" src="<?=THEME?>custom/Apply for Visa4_files/saved_resource(2).html" frameborder="0" scrolling="no" title="chat widget" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; position: fixed !important; border: 0px !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; z-index: 1000003 !important; cursor: auto !important; float: none !important; border-radius: unset !important; top: auto !important; bottom: 60px !important; right: 15px !important; left: auto !important; width: 21px !important; max-width: 21px !important; min-width: 21px !important; height: 21px !important; max-height: 21px !important; min-height: 21px !important; display: block !important;"></iframe><div class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; top: 0px !important; right: auto !important; bottom: auto !important; left: 0px !important; position: absolute !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 100% !important; height: 100% !important; display: none !important; z-index: 1000001 !important; cursor: move !important; float: left !important; border-radius: unset !important;"></div><div id="jwaFJG3-1546065820562" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; top: 0px !important; right: auto !important; bottom: auto !important; left: 0px !important; position: absolute !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 6px !important; height: 100% !important; display: block !important; z-index: 999998 !important; cursor: w-resize !important; float: none !important; border-radius: unset !important;"></div><div id="wMVZidJ-1546065820562" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; top: 0px !important; right: 0px !important; bottom: auto !important; left: auto !important; position: absolute !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 100% !important; height: 6px !important; display: block !important; z-index: 999998 !important; cursor: n-resize !important; float: none !important; border-radius: unset !important;"></div><div id="FBbiGyQ-1546065820562" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; top: 0px !important; right: auto !important; bottom: auto !important; left: 0px !important; position: absolute !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 12px !important; height: 12px !important; display: block !important; z-index: 999998 !important; cursor: nw-resize !important; float: none !important; border-radius: unset !important;"></div><iframe id="UBsi10r-1546065820582" src="<?=THEME?>custom/Apply for Visa4_files/saved_resource(3).html" frameborder="0" scrolling="no" title="chat widget" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; position: fixed !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 378px !important; z-index: 999999 !important; cursor: auto !important; float: none !important; border-radius: unset !important; bottom: 100px !important; top: auto !important; right: 20px !important; left: auto !important; display: none !important; height: 0px !important;"></iframe></div><iframe src="<?=THEME?>custom/Apply for Visa4_files/saved_resource(4).html" title="chat widget logging" style="display: none !important;"></iframe></body></html>
+</body>
+</html>

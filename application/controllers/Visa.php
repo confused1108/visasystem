@@ -36,6 +36,19 @@ class Visa extends CI_Controller {
     public function apply_visa(){
         $this->load->view('main/apply_visa');
     }
+    public function documents(){
+        $this->load->view('main/documents');
+    }
+    public function privacy(){
+        $this->load->view('main/privacy');
+    }
+    public function about(){
+        $this->load->view('main/about');
+    }
+    public function terms(){
+        $this->load->view('main/terms');
+    }
+
     public function apply_first(){
         $data=array();
         $data['application_num']=substr($_POST['country_code'], 0, 3).''.random_string('numeric', 5);
@@ -56,7 +69,6 @@ class Visa extends CI_Controller {
         $sheet = $this->VisaModel->apply_first($data);
         redirect(CTRL."Visa/form_second/$appnum");
     }
-
     public function form_second($appnum){
         $this->load->Model('VisaModel');
         $sheet = $this->VisaModel->form_second($appnum);
@@ -77,6 +89,9 @@ class Visa extends CI_Controller {
         $this->load->Model('VisaModel');
         $sheet = $this->VisaModel->form_sixth($appnum);
         $this->load->view('main/form_sixth',$sheet);
+    }
+    public function temp_exit($appnum){
+        $this->load->view('main/temp_exit');
     }
     public function form_fifth($appnum){
         //$this->load->helper('form');
@@ -108,10 +123,15 @@ class Visa extends CI_Controller {
         $data['passport_place_of_issue']=$_POST['passport_place_of_issue'];
         $data['passport_date_issue']=$_POST['passport_date_issue'];
         $data['passport_expiry_date']=$_POST['passport_expiry_date'];
-
+        $btn=$_POST['submit'];
         $this->load->Model('VisaModel');
         $sheet = $this->VisaModel->apply_second($data);
-        redirect(CTRL."Visa/form_third/$appnum");
+        if($btn=="Continue"){
+            redirect(CTRL."Visa/form_third/$appnum");
+        }
+        else{
+            redirect(CTRL."Visa/temp_exit/$appnum");
+        }
     }
     public function apply_third($appnum){
         $data=array();
@@ -146,10 +166,15 @@ class Visa extends CI_Controller {
         $data['emp_designation']=$_POST['emp_designation'];
         $data['employer_add']=$_POST['employer_add'];
         $data['employer_phone']=$_POST['employer_phone'];
-
+        $btn=$_POST['submit'];
         $this->load->Model('VisaModel');
         $sheet = $this->VisaModel->apply_second($data);
-        redirect(CTRL."Visa/form_fourth/$appnum");
+        if($btn=="Continue"){
+            redirect(CTRL."Visa/form_fourth/$appnum");
+        }
+        else{
+            redirect(CTRL."Visa/temp_exit/$appnum");
+        }
     }
     public function apply_fourth($appnum){
         $data=array();
@@ -208,10 +233,16 @@ class Visa extends CI_Controller {
                 }
             }
         }
-
+        $data['updated_date']=date("d-m-y");
+        $btn=$_POST['submit'];
         $this->load->Model('VisaModel');
         $sheet = $this->VisaModel->apply_second($data);
-        redirect(CTRL."Visa/form_fifth/$appnum");
+        if($btn=="Continue"){
+            redirect(CTRL."Visa/form_fifth/$appnum");
+        }
+        else{
+            redirect(CTRL."Visa/temp_exit/$appnum");
+        }
     }
     public function apply_fifth($appnum){
         redirect(CTRL."Visa/form_sixth/$appnum");
