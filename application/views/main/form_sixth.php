@@ -9,7 +9,7 @@
  */
 ?>
 <!DOCTYPE html>
-<!-- saved from url=(0080)https://www.etaonlineindia.com/index.php/welcomevisa/visa_payment_detail/BOL5320 -->
+<!-- saved from url=(0080)https://www.evisaonline.org.in/index.php/welcomevisa/visa_payment_detail/BOL5320 -->
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
     <meta name="viewport" content="width=device-width">
@@ -48,19 +48,19 @@
         gtag('config', 'UA-110581702-2');
     </script>
 
-    <script> var base_url = 'https://www.etaonlineindia.com/';</script>
+    <script> var base_url = 'https://www.evisaonline.org.in/';</script>
 </head>
 <body onload="preventBack();" onpageshow="if (event.persisted) preventBack();">
-<form method="post" action="https://www.etaonlineindia.com/welcomevisa/final_payment/BOL5320" autocomplete="off" onsubmit="return validate_basic_details_form(3);">
+<form method="post" action="https://www.evisaonline.org.in/welcomevisa/final_payment/BOL5320" autocomplete="off" onsubmit="return validate_basic_details_form(3);">
     <!--onsubmit="return validate_basic_details_form();"-->
     <div class="wrapper">
         <div class="pageHeader">
-            <a href="https://www.etaonlineindia.com/">
+            <a href="https://www.evisaonline.org.in/">
                 <img src="<?=THEME?>custom/Apply for Visa6_files/banner1.png" alt="e-Tourist Visa" title="e-Tourist Visa">
             </a>
         </div>
         <div class="pageHeading1 text_center">
-            Payment Details <div style="float:right;margin-right:10px;"> <a href="https://www.etaonlineindia.com/" title="Back To Home"><img src="<?=THEME?>custom/Apply for Visa6_files/Home_2.png"></a> </div>
+            Payment Details <div style="float:right;margin-right:10px;"> <a href="https://www.evisaonline.org.in/" title="Back To Home"><img src="<?=THEME?>custom/Apply for Visa6_files/Home_2.png"></a> </div>
         </div>
         <div class="text_left text_bold" style="font-size: .5em;text-align:center;">
             <h3> Please note down your temprory Application ID : <?php echo $appdata[0]['application_num']; ?></h3>
@@ -93,7 +93,7 @@
                 </p>
                 <span style="color:#0D53A8;font-weight: bold; ">Undertaking</span>
                 <p class="sitePara">
-                    <input type="checkbox" name="checkb" required="">I, the applicant, hereby certify that I agree to all the terms and conditions given on the website <span class="style1">www.etaonlineindia.com</span> and understand all the questions and statements of this application. The answers and information furnished in this application are true and correct to the best of my knowledge and belief. <strong style="color:#000000">I understand and agree that once the fee is paid towards the Temporary application ID</strong> <strong style="color:#0D53A8">BOL5320</strong> <strong style="color:#000000">is  100% non-refundable and I will not claim a refund or dispute the transaction incase of cancellation request raised at my end. I also understand that www.evisa-india.in is only responsible for processing my application and the visa may be granted or rejected by the indian government. I authorized them to take the payment from my card online.</strong>
+                    <input type="checkbox" name="checkb" required="">I, the applicant, hereby certify that I agree to all the terms and conditions given on the website <span class="style1">www.evisaonline.org.in</span> and understand all the questions and statements of this application. The answers and information furnished in this application are true and correct to the best of my knowledge and belief. <strong style="color:#000000">I understand and agree that once the fee is paid towards the Temporary application ID</strong> <strong style="color:#0D53A8">BOL5320</strong> <strong style="color:#000000">is  100% non-refundable and I will not claim a refund or dispute the transaction incase of cancellation request raised at my end. I also understand that www.evisa-india.in is only responsible for processing my application and the visa may be granted or rejected by the indian government. I authorized them to take the payment from my card online.</strong>
                 </p>
                 <div class="row"> <h3>Payment Options:</h3></div>
                 <div align="center">
@@ -104,7 +104,7 @@
                 <!--<div align="center">
                  <input type='hidden'  id="ebs_evisa_amount" value="10750">
                  <input type='hidden' id="ebs_curr" value="INR">
-                <span class="red_heading text_bold"><table border="0" cellpadding="10" cellspacing="0" align="center"><tr></tr><tr><td style="width: 20px;"><input type="radio" name="payment_options" value="ebs" required></td><td align="center"></td><td></td><td align="center"><a href="javascript:;"  ><img src="https://www.etaonlineindia.com/webroot/new-images/ebs-online-payment.jpg" border="0" alt="EBS Acceptance Mark" height="110px" width="319px"></a></td><td style="width: 239px;text-align: center;"><span class="red_heading text_bold"><b>e-Tourist visa fee : INR 10,750.00 ($150.00)</b></span></td></tr></table> </span>
+                <span class="red_heading text_bold"><table border="0" cellpadding="10" cellspacing="0" align="center"><tr></tr><tr><td style="width: 20px;"><input type="radio" name="payment_options" value="ebs" required></td><td align="center"></td><td></td><td align="center"><a href="javascript:;"  ><img src="https://www.evisaonline.org.in/webroot/new-images/ebs-online-payment.jpg" border="0" alt="EBS Acceptance Mark" height="110px" width="319px"></a></td><td style="width: 239px;text-align: center;"><span class="red_heading text_bold"><b>e-Tourist visa fee : INR 10,750.00 ($150.00)</b></span></td></tr></table> </span>
                 </div>-->
 
 
@@ -115,7 +115,7 @@
 
             <div class="row">
                 <div class="col-11 text_center">
-                    <button type="button" name="submit" class="btn btn-primary btn-lg" onclick="backurl(&#39;https://www.etaonlineindia.com/welcomevisa/temporaryexit/BOL5320&#39;);">Pay Later</button>
+                    <button type="button" name="submit" class="btn btn-primary btn-lg" onclick="backurl(&#39;https://www.evisaonline.org.in/welcomevisa/temporaryexit/BOL5320&#39;);">Pay Later</button>
                     <button type="submit" name="submit" class="btn btn-primary btn-lg" required="required">Proceed To Payment</button>
                 </div>
             </div>

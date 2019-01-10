@@ -9,7 +9,7 @@
  */
 ?>
 <!DOCTYPE html>
-<!-- saved from url=(0047)https://www.etaonlineindia.com/terms-conditions -->
+<!-- saved from url=(0047)https://www.evisaonline.org.in/terms-conditions -->
 <html class=" js no-touch svg inlinesvg svgclippaths no-ie8compat js no-touch svg inlinesvg svgclippaths no-ie8compat" style="" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,7 +17,7 @@
     <title>Terms &amp; Condition</title>
 
 
-    <link rel="canonical" href="https://www.etaonlineindia.com/">
+    <link rel="canonical" href="https://www.evisaonline.org.in/">
     <meta name="page-topic" content="Official Indian Visa Online">
     <meta name="copyright" content="E-Visa India">
     <meta name="author" content="E-Visa India">
@@ -27,7 +27,7 @@
     <meta name="YahooSeeker" content="Index, Follow">
     <meta name="bingbot" content="INDEX, FOLLOW">
     <meta name="Robots" content="INDEX, FOLLOW">
-    <meta name="reply-to" content="support@etaonlineindia.com">
+    <meta name="reply-to" content="support@evisaonline.org.in">
     <meta name="allow-search" content="yes">
     <meta name="revisit-after" content="daily">
     <meta name="distribution" content="global">
@@ -36,8 +36,8 @@
     <meta name="doc-type" content="Public">
     <link rel="stylesheet" href="<?=THEME?>custom/style.css">
     <link rel="stylesheet" href="<?=THEME?>custom/css-main.css">
-    <link rel="shortcut icon" href="https://www.etaonlineindia.com/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="https://www.etaonlineindia.com/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="https://www.evisaonline.org.in/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="https://www.evisaonline.org.in/favicon.ico" type="image/x-icon">
 
     <!--<link rel="stylesheet" type="text/css" href="style.css" />
         <script type="text/javascript" src="engine1/jquery.js"></script>-->
@@ -77,14 +77,14 @@
         <div class="mainCntr">
             <!--Begin logo-->
             <div class="logo">
-                <a href="https://www.etaonlineindia.com/"><img src="<?=THEME?>custom/banner1.png" alt="e-Tourist Visa" title="e-Tourist Visa"></a>
+                <a href="https://www.evisaonline.org.in/"><img src="<?=THEME?>custom/banner1.png" alt="e-Tourist Visa" title="e-Tourist Visa"></a>
                 <!-- <h4 style="font-size: 26px;font-family: Mistral;font-weight: 100;margin-left: 63px;margin-top: -16px; color: #000;margin-bottom: 10px;">Government of India Scheme</h4>-->
             </div>
-            <!--<div class="blank"><p class="blink" style="text-align:justify;margin-left:65px;font-weight:normal">The phone lines will be down today due to the technical issue, the services will resume tomorrow morning at 10 am. The applications will be processed as usual and for any query please email at </br>support@etaonlineindia.com</p></div>-->
+            <!--<div class="blank"><p class="blink" style="text-align:justify;margin-left:65px;font-weight:normal">The phone lines will be down today due to the technical issue, the services will resume tomorrow morning at 10 am. The applications will be processed as usual and for any query please email at </br>support@evisaonline.org.in</p></div>-->
             <!--end logo-->
             <!--Begin right-side-->
             <div class="right_side">
-                <!--<span><a href="https://www.etaonlineindia.com/"><img src="contact-us.png" title="etaonlineindia contact" alt="etaonlineindia"/></a></span>-->
+                <!--<span><a href="https://www.evisaonline.org.in/"><img src="contact-us.png" title="etaonlineindia contact" alt="etaonlineindia"/></a></span>-->
             </div>
             <!--end right-side-->
         </div>
@@ -136,9 +136,9 @@
     <div class="mainCntr">
         <!--Begin button_bottom-->
         <section class="bottom_btn" style="margin-top: 60px;">
-            <div class="frt_bt"><p style="margin-top: 10px;"><a href="https://www.etaonlineindia.com/apply-visa">Click here to Apply <br>for Visa</a></p></div>
-            <div class="frt_bt1"><p style="margin-top: 10px;"><a href="https://www.etaonlineindia.com/welcomevisa/complete_form">Amend or Complete Partialy<br>Filled Form</a></p></div>
-            <div class="frt_bt2"><p style="margin-top: 10px;"><a href="https://www.etaonlineindia.com/welcomevisa/complete_payment">Make Payment for<br>Completed Form</a></p></div>
+            <div class="frt_bt"><p style="margin-top: 10px;"><a  href="<?=CTRL?>Visa/apply_visa">Click here to Apply <br>for Visa</a></p></div>
+            <div class="frt_bt1"><p style="margin-top: 10px;"><a href="<?=CTRL?>Visa/partial">Amend or Complete Partialy<br>Filled Form</a></p></div>
+            <div class="frt_bt2"><p style="margin-top: 10px;"><a href="<?=CTRL?>Visa/complete_payment">Make Payment for<br>Completed Form</a></p></div>
             <!--	<div class="frt_bt3"><p><a href="">Check Application<br> Status</a></p></div>-->
             <!--div class="frt_bt4"><p><a href="">Visa Status </a></p></div--->
         </section>
@@ -157,15 +157,15 @@
                     <div class="left_bar_inner" style="margin-top: -1px;">
                         <h3 style=" margin:0px 0px 10px 0px;">e-Visa Information</h3>
                         <ul>
-                            <li><a href="https://www.etaonlineindia.com/apply-visa">e-Visa India</a></li>
-                            <li><a href="https://www.etaonlineindia.com/e-tourist-visa">Tourist E-visa</a></li>
-                            <li><a href="https://www.etaonlineindia.com/emergency-e-visa-to-india">Emergency E-visa</a></li>
-                            <li><a href="https://www.etaonlineindia.com/how-to-apply-for-an-indian-evisa">How to apply for an Indian E-visa</a></li>
-                            <li><a href="https://www.etaonlineindia.com/indian-business-e-visa">Indian Business E-visa</a></li>
-                            <li><a href="https://www.etaonlineindia.com/indian-medical-e-visa">Indian Medical E-visa</a></li>
-                            <li><a href="https://www.etaonlineindia.com/how-to-get-Indian-visa">How to get Indian Visa Online</a></li>
-                            <li><a href="https://www.etaonlineindia.com/indian-e-visa-application-processing-time">Indian E-visa Application Processing Time</a></li>
-                            <!--<li><a href="https://www.etaonlineindia.com/">FAQs-Payment Related</a></li>-->
+                            <li><a href="https://www.evisaonline.org.in/apply-visa">e-Visa India</a></li>
+                            <li><a href="https://www.evisaonline.org.in/e-tourist-visa">Tourist E-visa</a></li>
+                            <li><a href="https://www.evisaonline.org.in/emergency-e-visa-to-india">Emergency E-visa</a></li>
+                            <li><a href="https://www.evisaonline.org.in/how-to-apply-for-an-indian-evisa">How to apply for an Indian E-visa</a></li>
+                            <li><a href="https://www.evisaonline.org.in/indian-business-e-visa">Indian Business E-visa</a></li>
+                            <li><a href="https://www.evisaonline.org.in/indian-medical-e-visa">Indian Medical E-visa</a></li>
+                            <li><a href="https://www.evisaonline.org.in/how-to-get-Indian-visa">How to get Indian Visa Online</a></li>
+                            <li><a href="https://www.evisaonline.org.in/indian-e-visa-application-processing-time">Indian E-visa Application Processing Time</a></li>
+                            <!--<li><a href="https://www.evisaonline.org.in/">FAQs-Payment Related</a></li>-->
                         </ul>
                     </div>
 
@@ -201,7 +201,7 @@
 
                     </p><p><span>e-Visa Fee Related Terms and Conditions</span><br>
 
-                    </p><p>Our total fee for normal processing which takes 4-7 business days is 70 USD more than the Indian Government visa fee. Exchange rate is applicable per passenger excluding interchange charge for credit/debit cards. The fee must be paid at least 5 days before the expected date of travel mentioned by you otherwise application will not be processed. Our total fee for processing the application on Fast track is 145  USD more than the Government Visa fee. The visa result is provided in 1-2 business days from the date of submission of the e-Visa application. Exchange rate applicable per passenger excluding interchange charge for credit/debit cards. <br><br> Please note that when you are availing the fast track service then your travel date must be after 48 hours from time of submission of your application. Government of India reserves all rights to make any changes in the requirements and fees for India e-Visa without any prior notice. Fee charges of etaonlineindia.com may include, but are not limited to, Indian Embassy Fees and other charges of the respective embassy (consular fees etc.). We not responsible for any such changes by embassy or for any loss or delay relating to such changes. <br><br>The Govt. fee for the Indian e-visa is USD 100.00, USD 80.00, USD 25.00 which differs from one nationality of the applicant to the other. There is no fee from Govt. for few nationalities. We advise you to check the government fee on official website www.indianvisaonline.gov.in and then pay on our website. Our fee is 70 USD more for normal processing and 145 USD for fast track Processing irrespective of Govt. fee. Visa fees are non-refundable and non-transferrable. Once the application is paid, the fee is non-refundable.
+                    </p><p>Our total fee for normal processing which takes 4-7 business days is 70 USD more than the Indian Government visa fee. Exchange rate is applicable per passenger excluding interchange charge for credit/debit cards. The fee must be paid at least 5 days before the expected date of travel mentioned by you otherwise application will not be processed. Our total fee for processing the application on Fast track is 145  USD more than the Government Visa fee. The visa result is provided in 1-2 business days from the date of submission of the e-Visa application. Exchange rate applicable per passenger excluding interchange charge for credit/debit cards. <br><br> Please note that when you are availing the fast track service then your travel date must be after 48 hours from time of submission of your application. Government of India reserves all rights to make any changes in the requirements and fees for India e-Visa without any prior notice. Fee charges of evisaonline.org.in may include, but are not limited to, Indian Embassy Fees and other charges of the respective embassy (consular fees etc.). We not responsible for any such changes by embassy or for any loss or delay relating to such changes. <br><br>The Govt. fee for the Indian e-visa is USD 100.00, USD 80.00, USD 25.00 which differs from one nationality of the applicant to the other. There is no fee from Govt. for few nationalities. We advise you to check the government fee on official website www.indianvisaonline.gov.in and then pay on our website. Our fee is 70 USD more for normal processing and 145 USD for fast track Processing irrespective of Govt. fee. Visa fees are non-refundable and non-transferrable. Once the application is paid, the fee is non-refundable.
                         We are a service provider and we have no connection with the Government Of India . We are only helping the applicants who want to get a visa to visit India .
 
                     </p><p><span>e-Visa Issuance Related Terms</span><br>
@@ -212,9 +212,9 @@
 
                         These delivery timeframes are not applicable for Sri Lankan and Chinese Passport Holders. For these nationalities the delivery time is 5 business days in case of fast track processing and 10 business days in case of normal processing.<br><br>
 
-                        Please send an email at support@etaonlineindia.com or hello@etaonlineindia.com or call 24/7 customer care if you haven't received the delivery in the above mentioned time.<br><br>
+                        Please send an email at support@evisaonline.org.in or hello@evisaonline.org.in or call 24/7 customer care if you haven't received the delivery in the above mentioned time.<br><br>
 
-                        Approval or rejection of the visa application depends on the decision of the Government Immigrations department. The visa issuance is subject to the rules of Government of India and they reserve the rights to make any changes in that. www.etaonlineindia.com shall not be liable for any losses or damages, which the applicant may suffer arising from delay in processing or receiving or/and rejection of visa<br><br>
+                        Approval or rejection of the visa application depends on the decision of the Government Immigrations department. The visa issuance is subject to the rules of Government of India and they reserve the rights to make any changes in that. www.evisaonline.org.in shall not be liable for any losses or damages, which the applicant may suffer arising from delay in processing or receiving or/and rejection of visa<br><br>
 
                         Issuance of a visa or approval of visa application does not in any way give the applicant a right to enter India. The entry is at the sole discretion of the Immigration officer at the Indian Airport who is a representative of the Government of India. In case of denial of visa or entry into Indian territory, we shall not be held liable in any manner whatsoever. The applicant is requested to check the correctness of your visa the moment as soon as it is sent and in case of any discrepancy bring it to our notice immediately. We reserves the right to add, amend or alter these terms and conditions at any time without notice or liability and all applicants using our services shall be bound by the same<br><br>
 
@@ -255,7 +255,7 @@
                         <span style=" margin-left: -39px;">Step 2</span>
                         <div class="how_mid box_1"><img src="<?=THEME?>custom/2.png"></div>
                     </div>
-                    <a class="h2a" target="_blank" href="https://www.etaonlineindia.com/welcomevisa/complete_payment">Pay visa fee online</a>
+                    <a class="h2a" target="_blank" href="https://www.evisaonline.org.in/welcomevisa/complete_payment">Pay visa fee online</a>
                     <!-- <h2>Pay visa fee online </h2>-->
                     <!-- <p> Using Credit / Debit card </p>-->
                 </div>
@@ -280,7 +280,7 @@
     <!--End maincntr--><footer>
         <div class="mainCntr">
             <div class="footer_logo box_1"><img src="<?=THEME?>custom/payment-options1.png">
-                <p align="right" style="margin-left: -10px;">©copyright 2017 by www.etaonlineindia.com</p></div>
+                <p align="right" style="margin-left: -10px;">©copyright 2017 by www.evisaonline.org.in</p></div>
             <span id="siteseal" style="margin-left: 22px;">
 </span>
             <div class="footer_left">
@@ -292,7 +292,7 @@
                 <div align="justify"><strong style="font-size:12px; font-weight: normal;">
                         <div class="footercontain" style="color:#000; text-align:justify; margin-left:10px;">
                             <div align="justify"><strong style="font-size:12px; font-weight: normal;"><b style="font-size:14px; color:#f48020;">*Disclaimer:</b>
-                                    www.etaonlineindia.com website provides you e-visa services to India. This is a commercial website to apply for visa to India where you will be charged a fee for using our services. You can also apply through the direct official source. Kindly read all our Terms and Conditions carefully before using our services.
+                                    www.evisaonline.org.in website provides you e-visa services to India. This is a commercial website to apply for visa to India where you will be charged a fee for using our services. You can also apply through the direct official source. Kindly read all our Terms and Conditions carefully before using our services.
                                 </strong></div>
                         </div>
                     </strong></div><strong style="font-size:12px; font-weight: normal;">

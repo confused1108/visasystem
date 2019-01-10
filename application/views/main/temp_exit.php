@@ -9,7 +9,7 @@
  */
 ?>
 <!DOCTYPE html>
-<!-- saved from url=(0074)https://www.etaonlineindia.com/index.php/welcomevisa/temporaryexit/BOL5320 -->
+<!-- saved from url=(0074)https://www.evisaonline.org.in/index.php/welcomevisa/temporaryexit/BOL5320 -->
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
     <meta name="viewport" content="width=device-width">
@@ -34,19 +34,19 @@
             }
         }
     </style>
-    <script> var base_url = 'https://www.etaonlineindia.com/';</script>
+    <script> var base_url = 'https://www.evisaonline.org.in/';</script>
 </head>
 <body onload="preventBack();" onpageshow="if (event.persisted) preventBack();">
-<form method="post" action="https://www.etaonlineindia.com/index.php/welcomevisa/temporaryexit/BOL5320#" autocomplete="off" onsubmit="return validate_basic_details_form(3);">
+<form method="post" action="https://www.evisaonline.org.in/index.php/welcomevisa/temporaryexit/BOL5320#" autocomplete="off" onsubmit="return validate_basic_details_form(3);">
     <!--onsubmit="return validate_basic_details_form();"-->
     <div class="wrapper">
         <div class="pageHeader">
-            <a href="https://www.etaonlineindia.com/">
+            <a href="https://www.evisaonline.org.in/">
                 <img src="<?=THEME?>custom/Apply for Visa8_files/banner1.png" alt="e-Tourist Visa" title="e-Tourist Visa">
             </a>
         </div>
         <div class="pageHeading1 text_center">
-            Applicant Details Form <div style="float:right;margin-right:10px;"> <a href="https://www.etaonlineindia.com/" title="Back To Home"><img src="<?=THEME?>custom/Apply for Visa8_files/Home_2.png"></a> </div>
+            Applicant Details Form <div style="float:right;margin-right:10px;"> <a href="https://www.evisaonline.org.in/" title="Back To Home"><img src="<?=THEME?>custom/Apply for Visa8_files/Home_2.png"></a> </div>
         </div>
 
         <div class="container">

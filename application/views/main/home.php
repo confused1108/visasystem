@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- https://www.etaonlineindia.com/ -->
+<!-- https://www.evisaonline.org.in/ -->
 <html class=" js no-touch svg inlinesvg svgclippaths no-ie8compat js no-touch svg inlinesvg svgclippaths no-ie8compat" style="" lang="en">
 <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
@@ -10,7 +10,7 @@
     <meta name="description" content="Official Indian Visa Online, e visa India, e tourist visa India, Indian Visa Application for All Nationalities, Call 24X7 Customer Care" />
     <meta name="keywords" content="Apply Indian Visa Online, India Visa, Indian visa, e Visa India, e Tourist Visa India, Indian visa on arrival, Urgent Visa for India"/>
     <meta charset="utf-8">
-    <link rel="canonical" href="https://www.etaonlineindia.com/" />
+    <link rel="canonical" href="https://www.evisaonline.org.in/" />
     <meta name="page-topic" content="Official Indian Visa Online" />
     <meta name="copyright" content="E-Visa India" />
     <meta name="author" content="E-Visa India" />
@@ -20,7 +20,7 @@
     <meta name="YahooSeeker" content="Index, Follow">
     <meta name="bingbot" content="INDEX, FOLLOW">
     <meta name="Robots" content="INDEX, FOLLOW"/>
-    <meta name="reply-to" content="support@etaonlineindia.com" />
+    <meta name="reply-to" content="support@evisaonline.org.in" />
     <meta name="allow-search" content="yes" />
     <meta name="revisit-after" content="daily" />
     <meta name="distribution" content="global" />
@@ -49,11 +49,11 @@
                 <a href="index.html"><img src="<?=THEME?>custom/banner1.png" alt="e-Tourist Visa" title="e-Tourist Visa"></a>
                 <!-- <h4 style="font-size: 26px;font-family: Mistral;font-weight: 100;margin-left: 63px;margin-top: -16px; color: #000;margin-bottom: 10px;">Government of India Scheme</h4>-->
             </div>
-            <!--<div class="blank"><p class="blink" style="text-align:justify;margin-left:65px;font-weight:normal">The phone lines will be down today due to the technical issue, the services will resume tomorrow morning at 10 am. The applications will be processed as usual and for any query please email at </br>support@etaonlineindia.com</p></div>-->
+            <!--<div class="blank"><p class="blink" style="text-align:justify;margin-left:65px;font-weight:normal">The phone lines will be down today due to the technical issue, the services will resume tomorrow morning at 10 am. The applications will be processed as usual and for any query please email at </br>support@evisaonline.org.in</p></div>-->
             <!--end logo-->
             <!--Begin right-side-->
             <div class="right_side">
-                <!--<span><a href="https://www.etaonlineindia.com/"><img src="contact-us.png" title="etaonlineindia contact" alt="etaonlineindia"/></a></span>-->
+                <!--<span><a href="https://www.evisaonline.org.in/"><img src="contact-us.png" title="etaonlineindia contact" alt="etaonlineindia"/></a></span>-->
             </div>
             <!--end right-side-->
         </div>
@@ -110,9 +110,9 @@
     <div class="mainCntr">
         <!--Begin button_bottom-->
         <section class="bottom_btn" style="margin-top: 60px;">
-            <div class="frt_bt"><p style="margin-top: 10px;"><a  href="apply_now.html">Click here to Apply <br>for Visa</a></p></div>
-            <div class="frt_bt1"><p style="margin-top: 10px;"><a href="append.html">Amend or Complete Partialy<br>Filled Form</a></p></div>
-            <div class="frt_bt2"><p style="margin-top: 10px;"><a href="https://www.etaonlineindia.com/welcomevisa/complete_payment">Make Payment for<br>Completed Form</a></p></div>
+            <div class="frt_bt"><p style="margin-top: 10px;"><a  href="<?=CTRL?>Visa/apply_visa">Click here to Apply <br>for Visa</a></p></div>
+            <div class="frt_bt1"><p style="margin-top: 10px;"><a href="<?=CTRL?>Visa/partial">Amend or Complete Partialy<br>Filled Form</a></p></div>
+            <div class="frt_bt2"><p style="margin-top: 10px;"><a href="<?=CTRL?>Visa/complete_payment">Make Payment for<br>Completed Form</a></p></div>
             <!--	<div class="frt_bt3"><p><a href="">Check Application<br> Status</a></p></div>-->
             <!--div class="frt_bt4"><p><a href="">Visa Status </a></p></div--->
         </section>
@@ -126,7 +126,7 @@
                     <div class="left_bar_inner">
                         <h3 style=" margin:-10px 0px 10px 0px;"><img src="c6.png" />24/7 Customer Care</h3>
                         <!--<ul>
-                        <li class="contact-mail" style="background:url(c5.png) no-repeat 2%;">support@etaonlineindia.com</li>
+                        <li class="contact-mail" style="background:url(c5.png) no-repeat 2%;">support@evisaonline.org.in</li>
                             <li class="contact-mail1" style="background:url(c2.png) no-repeat 2%;">USA +1 630 239 8437</li>
                             <li class="contact-mail1" style="background:url(c1.png) no-repeat 2%;">UK +44 203 500 2749</li>
                             <li class="contact-mail1" style="background:url(c3.png) no-repeat 2%;">AUS +61 924 107 380</li>
@@ -142,13 +142,13 @@
                     <div class="left_bar_inner" style="margin-top: -1px;">
                         <h3 style=" margin:0px 0px 10px 0px;">e-Visa Information</h3>
                         <ul>
-                            <li><a href="https://www.etaonlineindia.com/apply-visa">e-Visa India</a></li>
-                            <li><a href="https://www.etaonlineindia.com/e-tourist-visa">Tourist E-visa</a></li>
-                            <li><a href="https://www.etaonlineindia.com/emergency-e-visa-to-india">Emergency E-visa</a></li>
-                            <li><a href="https://www.etaonlineindia.com/how-to-apply-for-an-indian-evisa">How to apply for an Indian E-visa</a></li>
-                            <li><a href="https://www.etaonlineindia.com/indian-business-e-visa">Indian Business E-visa</a></li>
-                            <li><a href="https://www.etaonlineindia.com/about-us">About Us</a></li>
-                            <!--<li><a href="https://www.etaonlineindia.com/">FAQs-Payment Related</a></li>-->
+                            <li><a href="https://www.evisaonline.org.in/apply-visa">e-Visa India</a></li>
+                            <li><a href="https://www.evisaonline.org.in/e-tourist-visa">Tourist E-visa</a></li>
+                            <li><a href="https://www.evisaonline.org.in/emergency-e-visa-to-india">Emergency E-visa</a></li>
+                            <li><a href="https://www.evisaonline.org.in/how-to-apply-for-an-indian-evisa">How to apply for an Indian E-visa</a></li>
+                            <li><a href="https://www.evisaonline.org.in/indian-business-e-visa">Indian Business E-visa</a></li>
+                            <li><a href="https://www.evisaonline.org.in/about-us">About Us</a></li>
+                            <!--<li><a href="https://www.evisaonline.org.in/">FAQs-Payment Related</a></li>-->
                         </ul>
                     </div>
 
@@ -170,7 +170,7 @@
                     <div class="right_bar_inner"><h1 style="text-transform: none; color:#fff; font-family:Tahoma,Geneva,sans-serif; font-weight:normal;font-size: 17px;text-align:center">Indian e-VISA</h1></div>
 
                     <!--<p><span style="line-height: 35px;">*Disclaimer:</span><br>
-                     etaonlineindia.com is responsible for full visa services to India. This is a commercial website to apply for visa to India. You will be charged a fee for using our services. Our fee will be higher than Indian Government as we charge a service fee on top of the Indian Government visa fee. Read all our Terms and Conditions carefully before using our services.</p>-->
+                     evisaonline.org.in is responsible for full visa services to India. This is a commercial website to apply for visa to India. You will be charged a fee for using our services. Our fee will be higher than Indian Government as we charge a service fee on top of the Indian Government visa fee. Read all our Terms and Conditions carefully before using our services.</p>-->
 
 
                     <p><span style="line-height: 35px;">e-Visa India</span><br>
@@ -236,8 +236,8 @@
            </ul>
  </div>
  <div class="block-index">
-   <h2><a href="http://evisaindia.org.in/" target="_self" title="5 REASONS TO CHOOSE INDIA E-VISA" style="color:#ff9933;">5 REASONS TO CHOOSE E-VISA INDIA</a></h2>
-   <a href="http://evisaindia.org.in/" title="5 REASONS TO CHOOSE INDIA E-VISA" target="_self"><div class="icon-reason"></div></a>
+   <h2><a href="http://evisaonline.org.in/" target="_self" title="5 REASONS TO CHOOSE INDIA E-VISA" style="color:#ff9933;">5 REASONS TO CHOOSE E-VISA INDIA</a></h2>
+   <a href="http://evisaonline.org.in/" title="5 REASONS TO CHOOSE INDIA E-VISA" target="_self"><div class="icon-reason"></div></a>
    <ul style=" margin-left: 22px;    margin-top: 31px;">
  <li><strong class="red">Hassle-free:</strong>Completely online procedure, no paper work involved.</li>
 
@@ -290,7 +290,7 @@
                         <span style=" margin-left: -39px;">Step 2</span>
                         <div class="how_mid box_1"><img src="<?=THEME?>custom/2.png"></div>
                     </div>
-                    <a class="h2a" target="_blank" href="https://www.etaonlineindia.com/welcomevisa/complete_payment">Pay visa fee online</a>
+                    <a class="h2a" target="_blank" href="https://www.evisaonline.org.in/welcomevisa/complete_payment">Pay visa fee online</a>
                     <!-- <h2>Pay visa fee online </h2>-->
                     <!-- <p> Using Credit / Debit card </p>-->
                 </div>
@@ -327,7 +327,7 @@
     <footer>
         <div class="mainCntr">
             <div class="footer_logo box_1"><img src="payment-options1.png">
-                <p align="right" style="margin-left: -10px;">&copy;copyright 2017 by www.etaonlineindia.com</p></div>
+                <p align="right" style="margin-left: -10px;">&copy;copyright 2017 by www.evisaonline.org.in</p></div>
 
             <div class="footer_left">
                 <a href="javascript:;" target="_blank" rel="nofollow">
@@ -339,8 +339,8 @@
                 <div align="justify"><strong style="font-size:12px; font-weight: normal;">
                         <div class="footercontain" style="color:#000; text-align:justify; margin-left:10px;">
                             <div align="justify"><strong style="font-size:12px; font-weight: normal;"><b style="font-size:14px; color:#f48020;">*Disclaimer:</b>
-                                    www.etaonlineindia.com website provides you e-visa services to India. This is a commercial website to apply for visa to India where you will be charged a fee for using our services. You can also apply through the direct official source. Kindly read all our Terms and Conditions carefully before using our services.
-                                    <!-- etaonlineindia.com is responsible for full visa services to India. This is a commercial website to apply for visa to India. You will be charged a fee for using our services. Our fee will be higher than Indian Government as we charge a service fee on top of the Indian Government visa fee. You can also apply through the Indian Embassy or website online at <a href="https://indianvisaonline.gov.in/visa/index.html" target="blank">www.indianvisaonline.gov.in </a>. Read all our Terms and Conditions carefully before using our services.-->
+                                    www.evisaonline.org.in website provides you e-visa services to India. This is a commercial website to apply for visa to India where you will be charged a fee for using our services. You can also apply through the direct official source. Kindly read all our Terms and Conditions carefully before using our services.
+                                    <!-- evisaonline.org.in is responsible for full visa services to India. This is a commercial website to apply for visa to India. You will be charged a fee for using our services. Our fee will be higher than Indian Government as we charge a service fee on top of the Indian Government visa fee. You can also apply through the Indian Embassy or website online at <a href="https://indianvisaonline.gov.in/visa/index.html" target="blank">www.indianvisaonline.gov.in </a>. Read all our Terms and Conditions carefully before using our services.-->
                                 </strong></div>
                         </div>
                 </div>

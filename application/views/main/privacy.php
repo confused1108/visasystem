@@ -9,7 +9,7 @@
  */
 ?>
 <!DOCTYPE html>
-<!-- saved from url=(0045)https://www.etaonlineindia.com/privacy-policy -->
+<!-- saved from url=(0045)https://www.evisaonline.org.in/privacy-policy -->
 <html class=" js no-touch svg inlinesvg svgclippaths no-ie8compat js no-touch svg inlinesvg svgclippaths no-ie8compat" style="" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,7 +17,7 @@
     <title>e-VISA Privacy Policy</title>
 
 
-    <link rel="canonical" href="https://www.etaonlineindia.com/">
+    <link rel="canonical" href="https://www.evisaonline.org.in/">
     <meta name="page-topic" content="Official Indian Visa Online">
     <meta name="copyright" content="E-Visa India">
     <meta name="author" content="E-Visa India">
@@ -27,7 +27,7 @@
     <meta name="YahooSeeker" content="Index, Follow">
     <meta name="bingbot" content="INDEX, FOLLOW">
     <meta name="Robots" content="INDEX, FOLLOW">
-    <meta name="reply-to" content="support@etaonlineindia.com">
+    <meta name="reply-to" content="support@evisaonline.org.in">
     <meta name="allow-search" content="yes">
     <meta name="revisit-after" content="daily">
     <meta name="distribution" content="global">
@@ -36,8 +36,8 @@
     <meta name="doc-type" content="Public">
     <link rel="stylesheet" href="<?=THEME?>custom/style.css">
     <link rel="stylesheet" href="<?=THEME?>custom/css-main.css">
-    <link rel="shortcut icon" href="https://www.etaonlineindia.com/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="https://www.etaonlineindia.com/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="https://www.evisaonline.org.in/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="https://www.evisaonline.org.in/favicon.ico" type="image/x-icon">
 
     <!--<link rel="stylesheet" type="text/css" href="style.css" />
         <script type="text/javascript" src="engine1/jquery.js"></script>-->
@@ -77,43 +77,46 @@
         <div class="mainCntr">
             <!--Begin logo-->
             <div class="logo">
-                <a href="https://www.etaonlineindia.com/"><img src="<?=THEME?>custom/banner1.png" alt="e-Tourist Visa" title="e-Tourist Visa"></a>
+                <a href="https://www.evisaonline.org.in/"><img src="<?=THEME?>custom/banner1.png" alt="e-Tourist Visa" title="e-Tourist Visa"></a>
                 <!-- <h4 style="font-size: 26px;font-family: Mistral;font-weight: 100;margin-left: 63px;margin-top: -16px; color: #000;margin-bottom: 10px;">Government of India Scheme</h4>-->
             </div>
-            <!--<div class="blank"><p class="blink" style="text-align:justify;margin-left:65px;font-weight:normal">The phone lines will be down today due to the technical issue, the services will resume tomorrow morning at 10 am. The applications will be processed as usual and for any query please email at </br>support@etaonlineindia.com</p></div>-->
+            <!--<div class="blank"><p class="blink" style="text-align:justify;margin-left:65px;font-weight:normal">The phone lines will be down today due to the technical issue, the services will resume tomorrow morning at 10 am. The applications will be processed as usual and for any query please email at </br>support@evisaonline.org.in</p></div>-->
             <!--end logo-->
             <!--Begin right-side-->
             <div class="right_side">
-                <!--<span><a href="https://www.etaonlineindia.com/"><img src="contact-us.png" title="etaonlineindia contact" alt="etaonlineindia"/></a></span>-->
+                <!--<span><a href="https://www.evisaonline.org.in/"><img src="contact-us.png" title="etaonlineindia contact" alt="etaonlineindia"/></a></span>-->
             </div>
             <!--end right-side-->
         </div>
         <div style="clear:both;"></div>
         <div class="bg">
-            <ul>
-                <li><a href="<?=CTRL?>">Home</a></li>
-                <li><a href="<?=CTRL?>Visa/apply_visa" class="active">Apply Now</a></li>
-                <!--<li><a href="holiday.php">Holiday</a></li>
-                <li><a href="index.php">Flight</a></li>
-                <li><a href="flight/hotel.php">Hotel</a></li>-->
+            <div id="nav">
+                <ul>
+                    <li><a href="<?=CTRL?>">Home</a></li>
+                    <li><a href="<?=CTRL?>Visa/apply_visa" class="active">Apply Now</a></li>
+                    <!--<li><a href="holiday.php">Holiday</a></li>
+                    <li><a href="index.php">Flight</a></li>
+                    <li><a href="flight/hotel.php">Hotel</a></li>-->
 
-                <li>
-                    <a href="<?=CTRL?>Visa/documents">Document Requirement</a>
-                </li>
-                <li>
-                    <a href="<?=CTRL?>Visa/privacy">Privacy Policy</a>
-                </li>
-                <li>
-                    <a href="<?=CTRL?>Visa/terms">Terms Conditions</a>
-                </li>
-                <li>
-                    <a href="<?=CTRL?>Visa/about">About Us</a>
-                </li>
-                <li>
-                    <a href="<?=CTRL?>Visa/contact">Contact Us</a>
-                </li>
+                    <li>
+                        <a href="<?=CTRL?>Visa/documents">Document Requirement</a>
+                    </li>
+                    <li>
+                        <a href="<?=CTRL?>Visa/privacy">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="<?=CTRL?>Visa/terms">Terms Conditions</a>
+                    </li>
+                    <li>
+                        <a href="<?=CTRL?>Visa/about">About Us</a>
+                    </li>
+                    <li>
+                        <a href="<?=CTRL?>Visa/contact">Contact Us</a>
+                    </li>
 
-            </ul>
+                </ul>
+
+            </div>
         </div>
     </header>
     <!-- Header End--><!--Begin banner-->
@@ -134,9 +137,9 @@
     <div class="mainCntr">
         <!--Begin button_bottom-->
         <section class="bottom_btn" style="margin-top: 60px;">
-            <div class="frt_bt"><p style="margin-top: 10px;"><a href="https://www.etaonlineindia.com/apply-visa">Click here to Apply <br>for Visa</a></p></div>
-            <div class="frt_bt1"><p style="margin-top: 10px;"><a href="https://www.etaonlineindia.com/welcomevisa/complete_form">Amend or Complete Partialy<br>Filled Form</a></p></div>
-            <div class="frt_bt2"><p style="margin-top: 10px;"><a href="https://www.etaonlineindia.com/welcomevisa/complete_payment">Make Payment for<br>Completed Form</a></p></div>
+            <div class="frt_bt"><p style="margin-top: 10px;"><a  href="<?=CTRL?>Visa/apply_visa">Click here to Apply <br>for Visa</a></p></div>
+            <div class="frt_bt1"><p style="margin-top: 10px;"><a href="<?=CTRL?>Visa/partial">Amend or Complete Partialy<br>Filled Form</a></p></div>
+            <div class="frt_bt2"><p style="margin-top: 10px;"><a href="<?=CTRL?>Visa/complete_payment">Make Payment for<br>Completed Form</a></p></div>
             <!--	<div class="frt_bt3"><p><a href="">Check Application<br> Status</a></p></div>-->
             <!--div class="frt_bt4"><p><a href="">Visa Status </a></p></div--->
         </section>
@@ -155,15 +158,15 @@
                     <div class="left_bar_inner" style="margin-top: -1px;">
                         <h3 style=" margin:0px 0px 10px 0px;">e-Visa Information</h3>
                         <ul>
-                            <li><a href="https://www.etaonlineindia.com/apply-visa">e-Visa India</a></li>
-                            <li><a href="https://www.etaonlineindia.com/e-tourist-visa">Tourist E-visa</a></li>
-                            <li><a href="https://www.etaonlineindia.com/emergency-e-visa-to-india">Emergency E-visa</a></li>
-                            <li><a href="https://www.etaonlineindia.com/how-to-apply-for-an-indian-evisa">How to apply for an Indian E-visa</a></li>
-                            <li><a href="https://www.etaonlineindia.com/indian-business-e-visa">Indian Business E-visa</a></li>
-                            <li><a href="https://www.etaonlineindia.com/indian-medical-e-visa">Indian Medical E-visa</a></li>
-                            <li><a href="https://www.etaonlineindia.com/how-to-get-Indian-visa">How to get Indian Visa Online</a></li>
-                            <li><a href="https://www.etaonlineindia.com/indian-e-visa-application-processing-time">Indian E-visa Application Processing Time</a></li>
-                            <!--<li><a href="https://www.etaonlineindia.com/">FAQs-Payment Related</a></li>-->
+                            <li><a href="https://www.evisaonline.org.in/apply-visa">e-Visa India</a></li>
+                            <li><a href="https://www.evisaonline.org.in/e-tourist-visa">Tourist E-visa</a></li>
+                            <li><a href="https://www.evisaonline.org.in/emergency-e-visa-to-india">Emergency E-visa</a></li>
+                            <li><a href="https://www.evisaonline.org.in/how-to-apply-for-an-indian-evisa">How to apply for an Indian E-visa</a></li>
+                            <li><a href="https://www.evisaonline.org.in/indian-business-e-visa">Indian Business E-visa</a></li>
+                            <li><a href="https://www.evisaonline.org.in/indian-medical-e-visa">Indian Medical E-visa</a></li>
+                            <li><a href="https://www.evisaonline.org.in/how-to-get-Indian-visa">How to get Indian Visa Online</a></li>
+                            <li><a href="https://www.evisaonline.org.in/indian-e-visa-application-processing-time">Indian E-visa Application Processing Time</a></li>
+                            <!--<li><a href="https://www.evisaonline.org.in/">FAQs-Payment Related</a></li>-->
                         </ul>
                     </div>
 
@@ -183,7 +186,7 @@
 
                     <p><span>Privacy-Policy </span><br>
 
-                        This privacy policy sets out how www.etaonlineindia.com uses and protects any information that you when you use this website. E-visa India is committed to ensuring that your privacy is protected. Should we ask you to provide certain information by which you can be identified when using this website, then you can be assured that it will only be used in accordance with this privacy statement. We may change this policy from time to time by updating this page. You should check this page from time to time to ensure that you are happy with any changes. <br>
+                        This privacy policy sets out how www.evisaonline.org.in uses and protects any information that you when you use this website. E-visa India is committed to ensuring that your privacy is protected. Should we ask you to provide certain information by which you can be identified when using this website, then you can be assured that it will only be used in accordance with this privacy statement. We may change this policy from time to time by updating this page. You should check this page from time to time to ensure that you are happy with any changes. <br>
                         <br>
                         <span>We can collect the following information: </span><br>
                         Name and other personal information. Contact information including email address. Other information required to process your Indian Visa Application. <br>
@@ -230,7 +233,7 @@
                         <span style=" margin-left: -39px;">Step 2</span>
                         <div class="how_mid box_1"><img src="<?=THEME?>custom/2.png"></div>
                     </div>
-                    <a class="h2a" target="_blank" href="https://www.etaonlineindia.com/welcomevisa/complete_payment">Pay visa fee online</a>
+                    <a class="h2a" target="_blank" href="https://www.evisaonline.org.in/welcomevisa/complete_payment">Pay visa fee online</a>
                     <!-- <h2>Pay visa fee online </h2>-->
                     <!-- <p> Using Credit / Debit card </p>-->
                 </div>
@@ -255,7 +258,7 @@
     <!--End maincntr--><footer>
         <div class="mainCntr">
             <div class="footer_logo box_1"><img src="<?=THEME?>custom/payment-options1.png">
-                <p align="right" style="margin-left: -10px;">©copyright 2017 by www.etaonlineindia.com</p></div>
+                <p align="right" style="margin-left: -10px;">©copyright 2017 by www.evisaonline.org.in</p></div>
             <span id="siteseal" style="margin-left: 22px;">
 </span>
             <div class="footer_left">
@@ -267,7 +270,7 @@
                 <div align="justify"><strong style="font-size:12px; font-weight: normal;">
                         <div class="footercontain" style="color:#000; text-align:justify; margin-left:10px;">
                             <div align="justify"><strong style="font-size:12px; font-weight: normal;"><b style="font-size:14px; color:#f48020;">*Disclaimer:</b>
-                                    www.etaonlineindia.com website provides you e-visa services to India. This is a commercial website to apply for visa to India where you will be charged a fee for using our services. You can also apply through the direct official source. Kindly read all our Terms and Conditions carefully before using our services.
+                                    www.evisaonline.org.in website provides you e-visa services to India. This is a commercial website to apply for visa to India where you will be charged a fee for using our services. You can also apply through the direct official source. Kindly read all our Terms and Conditions carefully before using our services.
                                 </strong></div>
                         </div>
                     </strong></div><strong style="font-size:12px; font-weight: normal;">

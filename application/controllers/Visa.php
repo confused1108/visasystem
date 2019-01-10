@@ -51,6 +51,14 @@ class Visa extends CI_Controller {
     public function contact(){
         $this->load->view('main/contact');
     }
+    public function partial(){
+        $this->load->view('main/partial');
+    }
+    public function partial_complete(){
+        $appnum=$_POST['application_id'];
+        redirect(CTRL."Visa/form_secon
+        d/$appnum");
+    }
 
     public function apply_first(){
         $data=array();

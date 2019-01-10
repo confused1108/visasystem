@@ -59,18 +59,18 @@
         gtag('config', 'UA-110581702-2');
     </script>
 
-    <script> var base_url = 'https://www.etaonlineindia.com/';</script>
+    <script> var base_url = 'https://www.evisaonline.org.in/';</script>
 </head>
 <body onload="preventBack();" onpageshow="if (event.persisted) preventBack();">
 <form method="post" action="<?=CTRL?>Visa/apply_fifth/<?php echo $this->uri->segment('3'); ?>" autocomplete="off" onsubmit="return validate_basic_details_form(3);">
     <!--onsubmit="return validate_basic_details_form();"-->
     <div class="wrapper">
-        <a href="https://www.etaonlineindia.com/">
+        <a href="https://www.evisaonline.org.in/">
             <img src="<?=THEME?>custom/Apply for Visa5_files/banner1.png" alt="e-Tourist Visa" title="e-Tourist Visa">
         </a>
     </div>
     <div class="pageHeading1 text_center">
-        Confirm Deatils <div style="float:right;margin-right:10px;"> <a href="https://www.etaonlineindia.com/" title="Back To Home"><img src="<?=THEME?>custom/Apply for Visa5_files/Home_2.png"></a> </div>
+        Confirm Deatils <div style="float:right;margin-right:10px;"> <a href="https://www.evisaonline.org.in/" title="Back To Home"><img src="<?=THEME?>custom/Apply for Visa5_files/Home_2.png"></a> </div>
     </div>
     <div class="text_left text_bold" style="font-size: .5em;text-align:center;">      <h3 style="color:purple;font-weight: bold;"> The Applicant is requested to verify the particulers field in this application form. The Applicant may face legal action(including refusal to enter India or deportation) in case of provisison wrong information.</h3>
         <h5> Please verify your registration details. If all details are correct please press <span style="color:purple;font-weight: bold;">"Verified and Continue"</span>.<br>For any corrections press <span style="color:purple;font-weight: bold;">"Modify/Edit"  </span> </h5>

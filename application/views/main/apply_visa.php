@@ -9,7 +9,7 @@
  */
 ?>
 <!DOCTYPE html>
-<!-- saved from url=(0041)https://www.etaonlineindia.com/apply-visa -->
+<!-- saved from url=(0041)https://www.evisaonline.org.in/apply-visa -->
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
     <meta name="viewport" content="width=device-width">
@@ -55,7 +55,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
     <!--End-->
-    <script> var base_url = 'https://www.etaonlineindia.com/';</script>
+    <script> var base_url = 'https://www.evisaonline.org.in/';</script>
 <body class="" style="">
 
 <form action="<?=CTRL?>Visa/apply_first" method="post" id="Registration_form" autocomplete="off">
@@ -63,12 +63,12 @@
 
     <div class="wrapper">
         <div class="pageHeader">
-            <a href="https://www.etaonlineindia.com/">
+            <a href="https://www.evisaonline.org.in/">
                 <img src="<?=THEME?>custom/Apply for Visa_files/banner1.png" alt="e-Tourist Visa" title="e-Tourist Visa">
             </a>
         </div>
         <div class="pageHeading1 text_center">
-            e-Visa Application <div style="float:right;margin-right:10px;"> <a href="https://www.etaonlineindia.com/apply-visa#" data-toggle="modal" data-target="#myModal"><img src="<?=THEME?>custom/Apply for Visa_files/ebook.png"></a> </div> <div style="float:right;margin-right:10px;"> <a href="https://www.etaonlineindia.com/" title="Back To Home"><img src="<?=THEME?>custom/Apply for Visa_files/Home_2.png"></a> </div>
+            e-Visa Application <div style="float:right;margin-right:10px;"> <a href="https://www.evisaonline.org.in/apply-visa#" data-toggle="modal" data-target="#myModal"><img src="<?=THEME?>custom/Apply for Visa_files/ebook.png"></a> </div> <div style="float:right;margin-right:10px;"> <a href="https://www.evisaonline.org.in/" title="Back To Home"><img src="<?=THEME?>custom/Apply for Visa_files/Home_2.png"></a> </div>
 
         </div>
         <div class="container">
